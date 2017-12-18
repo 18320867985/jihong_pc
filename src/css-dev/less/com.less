@@ -1,0 +1,89 @@
+
+/*公共页*/
+
+
+.com-head{
+      padding:  20px 0 40px 0;
+     
+        img {
+        height: 48px;
+        max-width: 230px;
+        float: left;
+        }
+        .com-head-logo{
+          height: 48px;
+        }
+    
+     span{
+      
+       display: inline-block;
+       float: left;
+       
+       margin: 0 30px ;
+       height: 28px;
+       margin-top:10px ;
+       border: none;
+       border-right:1px solid  @jiangge-color;
+        }
+    
+    a{
+        color:@a-color;
+        font-size: 16px !important;
+        height: 48px;
+        letter-spacing: 2px;
+        line-height: 48px;
+     
+      }
+       .com-link-r{
+           padding-right: 20px;
+               font-size: 16px !important;
+           
+           a{
+               color:@text-susess;
+               
+
+           }
+       }
+       
+      
+}
+
+//头部下面boxshow
+.com-head-boxshadow{
+   box-shadow: 0px 3px 5px #FFF6F9 ; 
+}
+
+//页脚
+.com-footer{
+    margin: 30px 0 0 0;
+    padding-bottom: 20px;
+    text-align: center;
+    ul li{
+        float:none;
+        display: inline-block;
+      
+        a{
+            padding: 0 5px !important;
+           color: @a-color !important;
+        }
+        a:hover{
+            color:@a-hover-color !important;
+        }
+    }
+     ul li+li:before{
+         content: '|';
+         padding-right: 10px;
+          color:@a-color;
+        
+     }
+    p{
+        margin: 10px 0 20px 0;
+        span{
+        padding-right:3px;
+     
+        }
+    }
+    
+}
+
+//其他

@@ -1,0 +1,224 @@
+/*******管理中心模板*********/
+
+.admin-iframe {
+    width: 970px;
+    min-height: 550px;
+    height: auto;
+    overflow: hidden;
+    border: none !important;
+}
+
+//导航
+.admin-nav {
+    position: relative;
+    margin-top: 0px !important;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 16px;
+    background: @text-danger;
+    //经销商文字
+    a.ttl {
+        display: block;
+        float: left;
+        height: 60px;
+        line-height: 60px;
+        width: 200px;
+        color: @text-white;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+//右边导航列表
+.admin-nav-list {
+    li {
+        float: left;
+        a {
+            display: block;
+            width: 108px;
+            height: 60px;
+            line-height: 60px;
+            color: @text-white;
+            font-size: 14px;
+            text-align: center;
+        }
+        a:hover {
+            background: @text-susess;
+            color: @text-white;
+        }
+    }
+    li.active a {
+        background: #038C7A;
+        color: @text-white;
+    }
+}
+
+//导航右边按钮
+.admin-nav-btn {
+    position: absolute;
+    float: right !important;
+    right: 20px;
+    top: 12px;
+}
+
+///////////////////////////内容部分//////////////////////////////
+.admin-cont {
+    margin-top: 20px;
+}
+
+//左边大框
+.admin-cont-l {
+    width: 200px;
+    min-height: 400px;
+    padding: 0 20px;
+}
+
+//折叠列表 
+.admin-cont-list {
+    height: 400px;
+    border: 1px solid @text-ash-2;
+}
+
+.admin-cont-l-list {
+    box-sizing: border-box;
+    text-align: center;
+  
+    
+    .ttl {
+        height: 50px;
+        line-height: 50px;
+        position: relative;
+        border: 1px solid @text-ash-2;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        background: #FCFCFB;
+        a:hover {
+            color: @text-base !important;
+        }
+        //图标
+        .iconfont {
+            position: absolute;
+            right: 20px;
+            font-weight: 200;
+        }
+        
+        // 选择的样式
+        &.active{
+          
+            .icon-fx-down{
+                color:@text-warning;
+                transform: rotate(180deg);
+            }
+        }
+        
+       
+        .icon-fx-down{
+            transition: all .8s;
+            
+        }
+    }
+    //选择折叠面板
+//  .ttl.active-now +.cont{
+//          display: block !important;
+//      
+//  }
+    //link链接
+    .cont {
+        display: none;
+        border: 1px solid @text-ash-2;
+        border-top: none;
+        font-size: 14px;
+        a {
+            display: block;
+            padding: 15px 0 15px 0;
+            color:#777;
+            &+a{
+               border-top: 1px solid @text-ash-3; 
+            }
+            // 当前选择的
+            &.link-url.active {
+                color: @text-warning;
+                
+            }
+        }
+       
+    }
+    .cont+.ttl {
+        border-top: none;
+    }
+    .ttl+.ttl {
+        border-top: none;
+    }
+    .link-url:hover {
+        color: @text-warning;
+        cursor: pointer;
+        text-decoration: none !important;
+    }
+}
+
+//右边内容
+.admin-cont-r {
+    width: 970px;
+    box-sizing: border-box;
+    border: 1px solid @text-ash-2;
+    min-height: 400px;
+    //标题
+    .ttl {
+        height: 36px;
+        line-height: 36px;
+        border-bottom: 1px solid @text-ash-2;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    
+    
+    //图片上传 =>定制订单页
+    .select-box {
+        position: relative;
+        
+        
+        .form-control {
+            display: inline-block;
+        }
+        //删除的图标
+        .glyphicon-minus-sign {
+            position: absolute;
+            top: 8px;
+            left: -20px;
+            font-size: 18px;
+            color: @text-warning;
+            cursor: pointer;
+        }
+       
+        
+        .add-btn {
+            position: absolute;
+            top: 0;
+            right: -200px;
+            width: 200px;
+        }
+        .select-btn {
+            height: 34px;
+            line-height: 34px;
+            padding: 0 15px;
+            margin-left: 10px;
+        }
+        &+.select-box {
+            margin-top: 10px;
+        }
+    }
+}
+
+
+/***订货明细****/
+
+.mxdinghuo-mx.table {
+    //overflow ...
+    td {
+        max-width: 100px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,49 @@
+
+/*****供应商列表*******/
+
+.gys-list{
+    padding: 10px;
+    
+}
+
+//查询框
+.gys-list-search{
+    margin: 0 auto;
+    width: 468px;
+    
+    .input-group{
+        margin-top: 10px;
+        height: 28px;
+        
+        .btn{
+            width: 50px;
+        }
+    }
+}
+
+//表格
+
+//fn
+.gys-list-table-fn(){
+    max-width: 100px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 5px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;   
+}
+.gys-list-table{
+    margin-top: 20px;
+    border-bottom: none;
+    
+    thead tr th{
+        border-bottom: none;
+        .gys-list-table-fn();
+    }
+    
+    tbody tr  td{
+       .gys-list-table-fn();
+    }
+}

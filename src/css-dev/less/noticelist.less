@@ -1,0 +1,76 @@
+
+/*公告列表*/
+
+.noticelist{
+    
+    margin-top: 10px;
+    
+    min-height: 100px;
+   
+}
+
+
+// 内容
+.noticelist-cont{
+    
+  
+    .list-group-item.ttl{
+        padding-left: 20px;
+        padding-right: 20px;
+        background: @text-ash-2;
+        
+    } 
+  
+    
+    //链接a
+    a.text-primary{
+        display: inline-block;
+        
+        max-width: 600px;
+        overflow: hidden;
+       white-space: nowrap;
+       text-overflow: ellipsis;
+    }
+    span.date{
+           display: inline-block;
+    }
+    
+    
+    //最后空框
+    .last-item{
+        height: 50px;
+    }
+    
+   .noticelist-cont-2  {
+       
+       li:hover{
+           color:@text-warning;
+           background: #f8f8f8;
+       }
+       
+       li:hover a{
+           color:@text-warning; 
+       }
+       
+//     border: 1px solid @text-ash-2;
+//      border-top: none;
+//     
+//     
+//     .list-group-item:nth-child(odd){
+//         
+//          border-left: none;
+//     }
+//     .list-group-item:nth-child(even){
+//         
+//          border-right: none;
+//     }
+//     
+//      .list-group-item:last-child{
+//         
+//          border-bottom: none;
+//     }
+//     
+      
+   }
+    
+}

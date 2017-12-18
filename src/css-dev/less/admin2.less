@@ -1,0 +1,99 @@
+/********供应商-发布商品***********/
+
+.gys-fabusp {
+    //装箱数 尾巴提示
+    .weiba {
+        width: 100px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+        color: @text-ash;
+        font-size: 12px;
+    }
+    p {
+        margin-top: 5px;
+    }
+    textarea {
+        height: 130px;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid @text-ash;
+        overflow: hidden;
+        font-size: 12px;
+        &:focus {
+            border: 1px solid @text-warning;
+        }
+    }
+    //结算方式
+    .alert-txt {
+      
+        height: 34px;
+        line-height: 34px;
+        margin-top: 5px;
+        padding: 0;
+        border: 1px solid @text-danger;
+        color: @text-danger;
+        
+          .ttl {
+            border: none;
+        }
+        //人民币图标
+        .icon-renminbi {
+           
+            font-size: 16px;
+          
+            margin-right: -5px;
+            
+            
+        }
+        //单价
+        .dj {
+            font-size: 14px;
+        }
+        //关闭icon
+        .icon-error {
+            font-size: 24px;
+            vertical-align: middle;
+            margin-right: 10px;
+            color: @text-danger;
+        }
+    }
+}
+
+
+/***********************修改密码***********************/
+
+.gys-editpwd {
+    padding: 10px;
+}
+
+.gys-editpwd-btn {
+    border: 1px solid @text-ash-2;
+    li {
+        float: left;
+    }
+    .btn {
+        width: 108px;
+        height: 40px;
+        line-height: 40px;
+        padding: 0;
+        border: none;
+        border-right: 1px solid @text-ash-2;
+        text-align: center;
+        &.btn-default:hover {
+            background: none;
+        }
+    }
+    .btn.btn-danger:focus {
+        background: @text-danger;
+    }
+}
+
+//表单
+.gys-editpwd-form {
+    border: 1px solid @text-ash-2;
+    border-top: none;
+    form {
+        padding-top: 30px;
+    }
+}

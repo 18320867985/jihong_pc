@@ -1,0 +1,316 @@
+
+/***** 商品列表*********/
+
+.prodlist{
+   padding: 0 0 10px 0;
+}
+
+//查询结果
+.prodlist-resut{
+   
+    padding-left: 20px;
+   margin: 10px 0;
+    vertical-align: middle;
+    
+    font-size: 12px;
+    
+    
+    span,  
+.iconfont{
+          vertical-align: middle; 
+    }
+    .iconfont{ margin: 0 5px;}
+    
+}
+.prodlist-cont{
+    min-height: 300px;
+    border:1px solid @text-ash-2 ; 
+    
+    padding-right: 4px;
+    padding-left: 4px;
+   
+}
+//标题
+.prodlist-ttl{
+    position: relative;
+   
+    padding-right: 20px;
+     margin: 0;
+    border:1px solid @text-ash-2 ;
+    border-bottom:2px solid @text-danger ;
+    background: @background-menu-active;
+    .btn {
+        width: 108px;
+        height: 30px;
+        line-height: 30px;
+         padding: 0;
+     
+       border: none;
+        background: @text-danger;
+        color:@text-white;
+        text-align: center;
+    }
+    
+    a{
+       position: relative;
+       top:7px;
+       
+       span{
+           margin: 0 3px;
+       }
+    }
+    
+}
+
+//按钮列表
+
+.prodlist-btns{
+    margin-top: 12px;
+    padding-left: 5px;
+    
+    .btn{
+        
+        width: 70px;
+        height: 24px;
+        line-height: 24px;
+        padding: 0;
+        
+        text-align: center;
+        .glyphicon{ color:#a0a0a0;}
+    }
+    
+    a:active{
+       outline: none;
+       box-shadow: none;
+    }
+    
+     a.btn-danger{
+         .glyphicon{ color:@text-white;}
+    }
+}
+
+//图片列表
+
+.prodlist-thumbnail{
+    
+   margin-top: 10px;
+    
+  .col-xs-2 {
+      
+     width: 20% !important;
+    
+      border-bottom:1px solid @text-ash-3  ;
+      padding: 20px;
+   
+     &+.col-xs-2{  border-left:1px solid @text-ash-2;  }
+  }
+  
+  
+  .col-xs-2:nth-child(5n+1){
+      border-left:none;
+  }
+    //图片
+    .thumbnail{
+        
+        position: relative;
+    /* 打折优惠图片*/
+        .dazheyouhui {
+         
+            position: absolute;
+            right: 5px;
+            top: 0;
+            z-index: 9999;
+           
+          
+         .iconfont{
+            font-size: 30px;
+            color: red; 
+         }
+         
+         .dazhe-text{
+             position: absolute;
+             top:10px;
+             right: 3px;
+             color:#fff;
+             font-size: 12px;
+             
+         }
+         
+        }
+        
+         .dazheyouhui-ttl{
+          position: absolute;
+           bottom: 45px;
+        left:10px;
+            z-index: 9999;
+            width: 150px;
+            padding: 3px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            
+            .des-l{
+                border:1px solid @text-warning;
+                padding: 1px 2px;
+                color:red;
+                background: #fff;
+                font-size: 12px;
+            }
+            
+            .des-r{
+               
+            background: #fff;
+                color:@text-999;
+                font-size: 12px;
+            }
+            
+            &:hover span{
+                //color:@text-warning;
+            }
+      }
+        
+         
+       // width: 200px !important;
+         margin-bottom: 0;
+       img{
+            width: 183px ; 
+            height: 220px;
+            transition: all 1s;
+       } 
+       
+        //单价
+        .dj{
+            margin-top: 15px;
+            font-size: 14px;
+            
+            .iconfont{
+                vertical-align:bottom;
+                 font-size: 14px;
+            }
+        }
+       //描述
+        .dec{
+            margin-top: 5px;
+            line-height: 20px;
+            height: 40px;
+            overflow: hidden;
+             transition: all 1s;
+        }
+        
+        .shop{
+            margin-top: 30px;
+             width:100%;
+            
+              //文本框
+            .xp-txt{
+            
+          
+              width:28px ;
+              height: 28px;
+             
+              font-size: 12px;
+              vertical-align: middle;
+              text-align: center;
+              margin-top: 0;
+              padding:0;
+              
+              border-radius: 0px;
+              border: 1px solid @text-ash;
+               &:hover{
+                 border: 1px solid @text-warning;
+             }
+              
+            }
+            
+            //加减
+            .btn-group-vertical.btn-group-xs{
+              
+              width:20px ;
+              height: 28px; 
+              margin-left:0px ;
+              vertical-align: middle;
+               
+              .btn{
+                  height: 14px;
+                  line-height: 14px;
+                  font-size: 12px;
+                   margin: 0;
+                   padding: 0;
+                   color:@text-ash;
+                   
+                //焦点
+               &:focus{
+                   background: none;
+               }
+               
+                    
+                //焦点
+               &:hover{
+                   color:@text-warning;
+                   background: none;
+               }
+               
+              }
+              .btn+.btn{ border-top: none;}
+              
+             
+            }
+            
+            //购物车
+            .xp-shop{
+              width:32px ;
+              height: 28px;
+              vertical-align: middle;
+              text-align: center;
+              border: 1px solid @text-ash-2;
+              padding: 0;
+              margin-left:0px ;
+              background: none;
+              outline: none;
+              .iconfont{
+                  color:@text-danger;
+                  font-size: 18px;
+              }
+             
+               &:hover{
+                 border: 1px solid @text-warning;
+             }
+             
+            }
+            //立即购买
+              .xp-liji{
+                  width: 70px;
+                  height: 28px;
+                  vertical-align: middle;
+                  padding: 0;
+                  border-radius: 4px;
+                  margin: 0 !important;
+                  margin-right: 0px;
+                  margin-left: 10px;
+                  background: @text-danger;
+                  border:1px solid @text-danger;
+                  color:@text-white;
+                  text-align: center;
+                  outline: none;
+                  &:active{
+                      
+                  }
+              }
+        }
+    }
+    
+     .thumbnail:hover img{
+         transform: scale(1.05);
+     }
+      .thumbnail:hover  .dec{
+       color:@text-danger;
+     }
+    
+}
+
+
+//分页
+
+.prodlist-paging{
+    margin: 10px;
+}

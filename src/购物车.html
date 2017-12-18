@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>购物车</title>
+
+		<link rel="stylesheet" href="Content/Home/cstfont/iconfont.css" />
+		<link rel="stylesheet" href="Content/Home/all.css" />
+		<link rel="stylesheet" href="Content/Home/icheck/skins/flat/red.css" />
+
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="Content/Home/ie/ie8.css"  />
+		<![endif]-->
+
+	</head>
+
+	<body class="body-bg relative" data-spy="scroll" data-tagget="huating">
+		<!--top -->
+		<header>
+			<div class="bg-white ">
+
+				<div class="index-head">
+					<div class="container-12 clearfix ">
+						<!--已登陆-->
+						<div class="index-head-wrap v-hide">
+							<div class="index-head-l pull-left">
+								<span class="text-777">你好,</span>
+								<a href="#">
+									<span class="text-danger">admin</span>
+									<span class="iconfont icon-xiala  text-base"></span>
+								</a>
+								<span class="text-ash-2">|</span>
+								<span class="text-777">下午好,欢迎你回来!</span>
+								<span class="text-ash-2">|</span>
+								<a href="#" class="index-head-l-a">
+									<span class=" iconfont icon-xinxi"></span>
+									<span class="text-777">消息</span>
+									<span class="text-danger">0</span>
+									<span class="iconfont icon-xiala  text-base"></span>
+								</a>
+							</div>
+
+							<div class="index-head-r pull-right">
+
+								<a href="#">
+									<span class="text-777">购物车</span>
+									<span class="text-danger">0</span>
+									<span class="iconfont icon-xiala  text-base"></span>
+								</a>
+								<span class="text-ash-2">|</span>
+								<a href="#">帮助中心</a>
+								<span class="text-ash-2">|</span>
+								<a href="#">联系我们</a>
+								<span class="text-ash-2">|</span>
+								<span class="text-777"><a href="#">退出</a></span>
+
+							</div>
+						</div>
+						<!--未登陆-->
+						<div class="index-head-wrap ">
+							<div class="index-head-l pull-left">
+								<span class="text-777">你好,欢迎来到吉宏园艺网!</span>
+
+							</div>
+
+							<div class="index-head-r pull-right ">
+
+								<a href="#">
+									注册
+								</a>
+								<span class="text-ash-2">|</span>
+								<a href="#">登录</a>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!--logo-->
+				<div class='index-logo container-12 clearfix  relative'>
+					<img alt="logo img" src="images/Home/logo.png" class="pull-left"></img>
+					<!--search box -->
+					<div class="index-search-big">
+						<div id="" class="index-search clearfix">
+							<input type="text" name="" id="" value="" class="index-search-input" placeholder="发财树" />
+							<input type="submit" id="" name="" class="index-search-submit btn btn-danger  rd-no" value="搜索" />
+						</div>
+						<!--搜索的下面列表-->
+						<ul class="index-search-list">
+							<li>
+								<a href="#">郁金香</a>
+							</li>
+							<li>
+								<a href="#">白玫瑰</a>
+							</li>
+							<li>
+								<a href="#">茉莉花</a>
+							</li>
+							<li>
+								<a href="#">网纹草</a>
+							</li>
+							<li>
+								<a href="#">空气凤梨</a>
+							</li>
+						</ul>
+
+					</div>
+
+					<div class="index-shop  pull-right">
+						<a href="#" class="index-shop-a" style=" border: 1px solid red;">
+							<span class="iconfont icon-gouwuche text-danger"></span> 购物车
+						</a>
+					</div>
+
+				</div>
+
+			</div>
+		</header>
+
+		<section >
+			<div class="shopcar container-12  " style="">
+				<!--表头--->
+				<div class=" clearfix shopcar-tb-top ">
+					<div class="col-xs-4 ">
+
+						<input  type="checkbox" name="" id="ckall" value="" style="margin-right: 5px;" />
+						<label for="ckall">全选</label>
+
+						<span style="margin-left: 40%;">商品信息</span>
+					</div>
+					<div class="col-xs-2">
+						数量
+					</div>
+					<div class="col-xs-2">
+						单价(元)
+					</div>
+					<div class="col-xs-2">
+						合计
+					</div>
+					<div class="col-xs-2">
+						操作
+					</div>
+
+				</div>
+				
+					
+				<!-- 每个大项-->
+				<!--ttl--->
+				<div class=" clearfix shopcar-tb-by ">
+					<div class="col-xs-2 row">
+
+						<input type="checkbox" name="" id="" value="" />
+						<span>玫瑰之约</span>
+					</div>
+
+				</div>
+				<!--content--->
+				
+				<div class="clearfix shopcar-tb-by1 ">
+					<div class="col-xs-4  prodinfo">
+
+						<input type="checkbox" class="ck" name="" id="" value="" />
+
+						<img src="images/Home/板块图片7.png" class="shop-img" style="">
+						<div id="" class="inline-block p">
+							<div class="mingcheng"><span>发财树</span></div>
+							<div  >规格:80# <span class="xinghao">型号：A1</span></div>
+						</div>
+					</div>
+					<div class="col-xs-2">
+						 <div class="input-txt">
+						 	<!--加减-->
+						 <span class="reduce iconfont icon-jian"></span>
+							 <input type="text" name="" id="" value="2" class="txt" />
+						  <span class="plus iconfont icon-jia"></span>
+						  
+						  <div class="clearfix"> </div>
+						 
+						  <div id="" class="text-left box">
+						  	  <span>箱(20盆)</span>
+						  </div>
+						 
+						 </div>
+						
+					</div>
+					<div class="col-xs-2">
+						27.60
+					</div>
+					<div class="col-xs-2">
+						<strong class="text-danger">27.60</strong>
+					</div>
+					<div class="col-xs-2 op">
+						<a href="#">移入收藏</a>
+						<a href="#">删除</a>
+					</div>
+				</div>
+
+				<div class="shopcar-tb-by-line"></div>
+				<div class="clearfix shopcar-tb-by1 ">
+					<div class="col-xs-4  prodinfo ">
+
+						<input class="ck"  type="checkbox" name="" id="" value="" />
+
+						<img src="images/Home/板块图片7.png" class="shop-img" style="">
+						<div id="" class="inline-block p">
+							<div class="mingcheng"><span>发财树</span></div>
+							<div  >规格:80# <span class="xinghao">型号：A1</span></div>
+						</div>
+					</div>
+					<div class="col-xs-2">
+						 <div class="input-txt">
+						 	<!--加减-->
+						 <span class="reduce iconfont icon-jian"></span>
+							 <input type="text" name="" id="" value="2" class="txt" />
+						  <span class="plus iconfont icon-jia"></span>
+						  
+						  <div class="clearfix"> </div>
+						 
+						  <div id="" class="text-left box">
+						  	  <span>箱(20盆)</span>
+						  </div>
+						 
+						 </div>
+						
+					</div>
+					<div class="col-xs-2">
+						27.60
+					</div>
+					<div class="col-xs-2">
+						<strong class="text-danger">27.60</strong>
+					</div>
+					<div class="col-xs-2 op">
+						<a href="#">移入收藏</a>
+						<a href="#">删除</a>
+					</div>
+				</div>
+
+				<!-- 每个大项-->
+				<!--ttl--->
+				<div class=" clearfix shopcar-tb-by ">
+					<div class="col-xs-2 row">
+
+						<input type="checkbox" name="" id="" value="" />
+						<span>玫瑰之约</span>
+					</div>
+
+				</div>
+				<!--content--->
+				
+				<div class="clearfix shopcar-tb-by1 ">
+					<div class="col-xs-4  prodinfo">
+
+						<input type="checkbox" class="ck" name="" id="" value="" />
+
+						<img src="images/Home/板块图片7.png" class="shop-img" style="">
+						<div id="" class="inline-block p">
+							<div class="mingcheng"><span>发财树</span></div>
+							<div  >规格:80# <span class="xinghao">型号：A1</span></div>
+						</div>
+					</div>
+					<div class="col-xs-2">
+						 <div class="input-txt">
+						 	<!--加减-->
+						 <span class="reduce iconfont icon-jian"></span>
+							 <input type="text" name="" id="" value="2" class="txt" />
+						  <span class="plus iconfont icon-jia"></span>
+						  
+						  <div class="clearfix"> </div>
+						 
+						  <div id="" class="text-left box">
+						  	  <span>箱(20盆)</span>
+						  </div>
+						 
+						 </div>
+						
+					</div>
+					<div class="col-xs-2">
+						27.60
+					</div>
+					<div class="col-xs-2">
+						<strong class="text-danger">27.60</strong>
+					</div>
+					<div class="col-xs-2 op">
+						<a href="#">移入收藏</a>
+						<a href="#">删除</a>
+					</div>
+				</div>
+
+				<div class="shopcar-tb-by-line"></div>
+				<div class="clearfix shopcar-tb-by1 ">
+					<div class="col-xs-4  prodinfo ">
+
+						<input class="ck"  type="checkbox" name="" id="" value="" />
+
+						<img src="images/Home/板块图片7.png" class="shop-img" style="">
+						<div id="" class="inline-block p">
+							<div class="mingcheng"><span>发财树</span></div>
+							<div  >规格:80# <span class="xinghao">型号：A1</span></div>
+						</div>
+					</div>
+					<div class="col-xs-2">
+						 <div class="input-txt">
+						 	<!--加减-->
+						 <span class="reduce iconfont icon-jian"></span>
+							 <input type="text" name="" id="" value="2" class="txt" />
+						  <span class="plus iconfont icon-jia"></span>
+						  
+						  <div class="clearfix"> </div>
+						 
+						  <div id="" class="text-left box">
+						  	  <span>箱(20盆)</span>
+						  </div>
+						 
+						 </div>
+						
+					</div>
+					<div class="col-xs-2">
+						27.60
+					</div>
+					<div class="col-xs-2">
+						<strong class="text-danger">27.60</strong>
+					</div>
+					<div class="col-xs-2 op">
+						<a href="#">移入收藏</a>
+						<a href="#">删除</a>
+					</div>
+				</div>
+
+				<!--结算-->
+				<div class="shop-jisuan bg-white">
+					
+					<button  type="button" class="btn btn-danger rd-no pull-right">去结算</button>
+					<span class="count pull-right"> 共计 <span class="text-danger">168.60</span></span>
+					<span class="select pull-right"> 已选 <span class="text-danger">3</span> 箱</span>
+					
+					<label for="select_allck"> <input type="checkbox" name="" id="select_allck" value="" /> 全选</label>
+				
+					
+				</div>
+				
+			</div>
+		</section>
+
+		<footer>
+			<!--页脚导航-->
+			<div class="index-ft">
+
+				<!--页脚标志图片 -->
+				<div class="index-ft-band container-12 text-center">
+
+					<div class="col-xs-3 item">
+						<img src="images/Home/footer-img1.png" alt="页脚标志图片" />
+						<div class="desc">
+							<h4>正品保证</h4>
+							<p>正品货行,值得信赖</p>
+						</div>
+					</div>
+					<div class="col-xs-3 item">
+						<img src="images/Home/footer-img2.png" alt="页脚标志图片" />
+						<div class="desc">
+							<h4>正品保证</h4>
+							<p>正品货行,值得信赖</p>
+						</div>
+					</div>
+
+					<div class="col-xs-3 item">
+						<img src="images/Home/footer-img3.png" alt="页脚标志图片" />
+						<div class="desc">
+							<h4>正品保证</h4>
+							<p>正品货行,值得信赖</p>
+						</div>
+					</div>
+
+					<div class="col-xs-3 item">
+						<img src="images/Home/footer-img4.png" alt="页脚标志图片" />
+						<div class="desc">
+							<h4>正品保证</h4>
+							<p>正品货行,值得信赖</p>
+						</div>
+					</div>
+
+				</div>
+
+				<!--页脚列表 -->
+				<div class="index-ft-list container-12 clearfix ">
+
+					<dl>
+						<dt>新手入门</dt>
+						<dd>
+							<a href="#">购物流程</a>
+						</dd>
+						<dd>
+							<a href="#">会员制度</a>
+						</dd>
+						<dd>
+							<a href="#">订单查询</a>
+						</dd>
+						<dd>
+							<a href="#">发票制度</a>
+						</dd>
+						<dd>
+							<a href="#">常见问题</a>
+						</dd>
+
+					</dl>
+					<dl>
+						<dt>支付方式</dt>
+						<dd>
+							<a href="#">货到付款</a>
+						</dd>
+						<dd>
+							<a href="#">网上支付</a>
+						</dd>
+						<dd>
+							<a href="#">银行转账</a>
+						</dd>
+						<dd>
+							<a href="#">礼品支付</a>
+						</dd>
+						<dd>
+							<a href="#">其他支付</a>
+						</dd>
+
+					</dl>
+					<dl>
+						<dt>配送服务</dt>
+						<dd>
+							<a href="#">配送范围与运费</a>
+						</dd>
+						<dd>
+							<a href="#">配送进度查询</a>
+						</dd>
+						<dd>
+							<a href="#">自提服务</a>
+						</dd>
+						<dd>
+							<a href="#">商品验货与签收</a>
+						</dd>
+
+					</dl>
+					<dl>
+						<dt>售后保障</dt>
+						<dd>
+							<a href="#">退换货政策</a>
+						</dd>
+						<dd>
+							<a href="#">退换货流程</a>
+						</dd>
+						<dd>
+							<a href="#">退款说明</a>
+						</dd>
+						<dd>
+							<a href="#">延保说明页面</a>
+						</dd>
+						<dd>
+							<a href="#">联系客服</a>
+						</dd>
+
+					</dl>
+					<dl>
+						<dt>商家合作</dt>
+						<dd>
+							<a href="#">商家入驻</a>
+						</dd>
+						<dd>
+							<a href="#">商家赢</a>
+						</dd>
+						<dd>
+							<a href="#">平台规则</a>
+						</dd>
+						<dd>
+							<a href="#">企业采购</a>
+						</dd>
+
+					</dl>
+
+				</div>
+
+				<div class="com-footer">
+					<ul>
+						<li>
+							<a href="#">关于吉宏</a>
+						</li>
+						<li>
+							<a href="#">吉宏梦</a>
+						</li>
+						<li>
+							<a href="#">盆栽交易平台</a>
+						</li>
+						<li>
+							<a href="#">吉宏发财树</a>
+						</li>
+						<li>
+							<a href="#">行业信息</a>
+						</li>
+						<li>
+							<a href="#">联系我们</a>
+						</li>
+					</ul>
+
+					<p class="text-center  text-ash">
+						<span>CopyRight</span>
+						<span>@ 2004-2017</span>
+						<span>吉宏ji-hong.cn</span>
+						<span>所有版权</span>
+					</p>
+				</div>
+
+			</div>
+
+		</footer>
+
+		<!--js -->
+		<script src="js/Home/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Home/jquery.superslide.2.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src=" js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="Content/Home/icheck/icheck.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--[if lte IE 9]>
+			<script src="js/Home/ie/ie8.js" type="text/javascript" charset="utf-8"></script>
+		<![endif]-->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('input').iCheck({
+					checkboxClass: 'icheckbox_flat-red',
+					radioClass: 'iradio_flat-red',
+					increaseArea: '20%' // optional
+				});
+			});
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,141 @@
+    
+    /******提示框*******/
+   
+   .alert{
+       font-size: 14px;
+    }
+            .alert button.close{
+                position: relative;
+                 font-size: 14px;
+                 top: 3px;
+                color:#fff;
+                opacity: .8;
+              
+                 vertical-align: bottom;
+                 outline: none;
+            }
+            
+            .alert .close:hover{
+                color:#fff;
+                
+                opacity: 1;
+       
+            }
+            
+
+//自动显示框
+
+//success
+
+.auto-box.auto-box-success,
+.auto-box.auto-box-warning,
+.auto-box.auto-box-danger,
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -23px;
+    z-index: 9991;
+}
+
+//confirm框
+
+.confirm-big{
+
+  
+
+  .confirm-modal{
+      position: fixed;
+      left: 0;
+      top:0;
+      
+      z-index: 9991;
+      
+      width: 100%;
+      height: 100%;
+      
+      background: #333;
+      
+      filter:alpha(opacity=30);
+      background: rgba(51,51,51,.3);
+  }
+  
+  //confirm-cont
+  .confirm-cont{
+      position: fixed;
+      left: 50%;
+      top:50%;
+      z-index: 9999;
+      width: 460px;
+      height: 234px;
+      
+      margin-left: -230px;
+      margin-top: -117px;
+    
+      
+      background: #fff;
+      box-shadow: 2px 2px 5px #777,-2px -2px 5px #777;
+      border-radius: 4px ;
+      
+      
+      //ttl标题
+      .ttl{
+          height: 60px;
+          line-height: 60px;
+          padding: 0 20px;
+          border-bottom: 1px solid @text-ash-2;
+         h4{
+             height: 6;
+          line-height: 60px;
+         }
+          span{
+              display: block;
+              color:@text-danger;
+              font-size: 16px;
+              font-weight: bold;
+              
+              cursor: pointer;
+          }
+      }
+      
+      //confirm-btn
+      
+      .confirm-btn{
+          padding: 65px 70px;
+          
+          button{
+              width: 100px;
+              height: 48px;
+              line-height: 48px;
+              padding: 0;
+              background: #fff;
+              border: 1px solid @text-ash-2;
+              border-radius: 4px;
+              color:#777;
+              font-size: 14px;
+              transition: all .5s;
+              text-align: center;
+              outline: none;
+           
+              
+              
+          }
+          
+      
+        .ok:hover{
+              background: @text-susess;
+              color:@text-white;
+              border:1px solid @text-susess;
+        }
+        
+         .cancel:hover{
+              background: @text-warning;
+              color:@text-white;
+              border:1px solid @text-warning;
+        }
+      }
+      
+  }
+  
+  
+}

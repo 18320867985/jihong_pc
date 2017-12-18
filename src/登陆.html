@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>登录</title>
+			
+		<link rel="stylesheet" href="Content/Home/cstfont/iconfont.css" />
+		<link rel="stylesheet" href="Content/Home/all.css" />
+	
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="Content/Home/ie/ie8.css" />
+		<![endif]-->
+	 
+	</head>
+	<body>
+		<header>	
+			<div class="container-12">
+			<div class="com-head">
+				<img src="images/Home/logo.png" class="com-head-logo" alt="logo img" /> <span></span> <a href="#">登录</a>
+			</div>
+				
+			</div>
+		</header>
+		<section  >
+			<div class="login">
+			<!-- 背景图片 -->
+			<div class="login-bgimg relative">
+				<!-- 登录框-->
+				<div class="container-12 relative">
+					<div class="login-form">
+						<ul class="login-form-ttl text-center clearfix">
+							 <!-- Tab title -->
+							 <li class="col-xs-6 active"><a href="#jxs"  data-toggle="tab" >经销商</a></li>
+							 <li class="col-xs-6"><a href="#gys"  data-toggle="tab" >供应商</a> </li> 	
+							
+						</ul>
+						
+						 <!-- Tab panes -->
+						 
+						<div class="tab-content">
+							<!--经销商-->
+							<div id="jxs" class="tab-pane active fade in form-vd1">
+								<div class="form-group  relative vd-box">
+									<label for="username" class="absolute icon"><span class="glyphicon iconfont icon-ren-copy text-ash"></span></label>
+									<input type="text"  
+										vd-req vd-req-msg="用户名不能为空"
+										 class=" form-control rd-no input-lg ie8-placeholder vd-item" name="user" id="username" value=""  placeholder="输入经销商用户账号"/>
+								</div>
+								<div class="form-group relative vd-box">
+									<label for="pwd" class="absolute icon"><span class="glyphicon iconfont icon-mima1 text-ash"></span></label>
+									<input type="password"  name="pwd"
+										vd-req vd-req-msg="密码不能为空"
+										 class=" vd-item form-control rd-no input-lg ie8-placeholder" id="pwd" value="" oncopy="return false" onpaste="return false"   placeholder="输入密码"/>
+								</div>
+								
+								<div class="login-bgimg-error alert alert-warning v-hide"><span class="iconfont icon-cuowu"></span>  用户名与密码不匹配</div>
+								
+								<div class="form-group clearfix">
+									<a href="#" class="pull-left login-reg-a">新用户注册</a>
+									<a href="#" class="pull-right">忘记密码</a>
+								</div>
+								<input type="button"   class="vd-btn btn1 btn btn-danger btn-lg btn-block rd-no" value="登录" />
+							</div>
+							
+							
+					
+							<!--供应商-->
+							<div id="gys" class="tab-pane fade form-vd2">
+								<div class="form-group  relative vd-box">
+									<label for="username" class="absolute icon"><span class="glyphicon iconfont icon-ren-copy text-ash"></span></label>
+									<input type="text"
+										vd-req vd-req-msg="用户名不能为空"
+										  class=" vd-item form-control rd-no input-lg ie8-placeholder" name="user" id="username" value=""  placeholder="输入供应商用户账号"/>
+								</div>
+								<div class="form-group relative vd-box">
+									<label for="username" class="absolute icon"><span class="glyphicon iconfont icon-mima1 text-ash"></span></label>
+									<input type="password" name="pwd" 
+										vd-req vd-req-msg="密码不能为空"
+										class=" vd-item form-control rd-no input-lg ie8-placeholder" id="" value="" oncopy="return false" onpaste="return false"   placeholder="输入密码"/>
+								</div>
+								<div class="login-bgimg-error alert alert-warning v-hide"><span class="iconfont icon-cuowu"></span> 用户名与密码不匹配</div>
+								<div class="form-group clearfix">
+									<a href="#" class="pull-left login-reg-a">新用户注册</a>
+									<a href="#" class="pull-right">忘记密码</a>
+								</div>
+								<input type="button" class="vd-btn btn2 btn btn-danger btn-lg btn-block rd-no" value="登录" />
+							</div>
+						</div>
+						
+					</div>
+				</div>
+	
+			</div>
+		</div>
+		
+		</section>
+		
+	
+	
+		<footer>
+			<div class="com-footer">
+				<ul>
+					<li><a href="#">关于吉宏</a></li>
+					<li><a href="#">吉宏梦</a></li>
+					<li><a href="#">盆栽交易平台</a></li>
+					<li><a href="#">吉宏发财树</a></li>
+					<li><a href="#">行业信息</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+				
+				<p class="text-center  text-ash">
+					<span>CopyRight</span> 
+					<span>@ 2004-2017</span> 
+					<span>吉宏ji-hong.cn</span>
+					<span>所有版权</span>
+				</p>
+			</div>
+		</footer>
+		
+		
+		<!--js -->
+		<script src="js/Home/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!--[if lte IE 9]>
+			<script src="js/Home/ie/ie8.js" type="text/javascript" charset="utf-8"></script>
+		<![endif]-->
+		
+		<script type="text/javascript">
+			
+			// 经销商
+			var vd1=vd.create(".form-vd1");
+			vd1.init();
+			$(".vd-btn.btn1").click(function(){
+				var $this = $(this);
+				// 成功
+				vd1.isSuccess(function(obj) {
+						vd1.disabled($this); //禁用
+						//vd1.enabled($this); //激活
+						$($this).val("提交中...");
+						var $err_obj=$(".form-vd1 .login-bgimg-error");
+						$err_obj.hide();
+						
+						//alert(JSON.stringify(obj)); // 数据
+
+				},
+					// 失败
+					function(obj) {
+					
+						var $err_obj=$(".form-vd1 .login-bgimg-error");
+						$err_obj.show();
+						$err_obj.find("span").text(obj.errorMsg)
+						$err_obj.text(obj.errorMsg);
+						
+						obj.el.focus();
+					});
+				
+			});
+			
+			
+			
+			// 供应商
+			var vd2=vd.create(".form-vd2");
+			vd2.init();
+			$(".vd-btn.btn2").click(function(){
+				
+				
+				var $this = $(this);
+				// 成功
+				vd2.isSuccess(function(obj) {
+						vd2.disabled($this); //禁用
+						//vd2.enabled($this); //激活
+						$($this).val("提交中...");
+						var $err_obj=$(".form-vd2 .login-bgimg-error");
+						$err_obj.hide();
+						
+						//alert(JSON.stringify(obj)); // 数据
+
+				},
+					// 失败
+					function(obj) {
+					
+						var $err_obj=$(".form-vd2 .login-bgimg-error");
+						$err_obj.show();
+						$err_obj.find("span").text(obj.errorMsg)
+						$err_obj.text(obj.errorMsg);
+						
+						obj.el.focus();
+					});
+				
+			});
+			
+			// 点击enter 键
+			$("html,body").keydown(function(e){
+				
+				if(e.keyCode===13){
+					var _id=$(".login-form-ttl li.active").find("a").attr("href");
+					$(_id).find(".btn.btn-danger").trigger("click");
+				}
+				
+				
+			});
+			
+			
+			
+			
+			
+			
+		</script>
+		
+	</body>
+
+</html>

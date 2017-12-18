@@ -1,0 +1,40 @@
+
+
+/*****订单列表******/
+
+.order-list{
+    padding: 10px;
+    
+    //overflow ...
+    .table td{
+        max-width: 120px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+//按钮组
+.order-list-btn{
+    margin-bottom: 10px;
+    
+    .btn.btn-sm{
+        padding: 3px 15px;
+        margin-right: 10px;
+        width: 80px;
+    }
+    .btn.btn-danger:focus{
+        
+      box-shadow: none;
+      background: @text-danger;
+      border-color: @text-danger;
+     
+        
+    }
+    
+    .btn.btn-default{
+        background: @text-ash;
+        color:@text-white;
+        
+    }
+}

@@ -1,0 +1,146 @@
+
+
+/*********订单详情*********/
+
+.orderdtl{
+    padding: 10px;
+}
+
+//列表
+.orderdtl-list{
+  
+
+  
+  li{
+       border:1px solid @text-ash-2; 
+       background: white;
+       
+       &+li{
+             border-top: none; 
+       }
+  }
+  
+  
+  //li-1
+   .li-1{
+       height: 50px;
+       line-height: 50px;
+           max-width: 100%;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+      label{
+          margin-left: 30px;
+      }
+      
+      //下面一天线
+      border-bottom: 1px solid @text-ash-2;
+       
+       
+   }
+   
+   // li-2
+   
+   .li-2{
+        border-left:  none;
+       border-right:  none;
+       //按钮组
+       .btn-group{
+           margin: 0;
+          
+       }
+       
+       .btn{
+           border-color: @text-ash-2 ;
+            border-top: none;
+            border-bottom: none;
+         
+            padding: 10px 20px;
+            
+           
+       }
+       .btn-default:hover{
+                background: #fff;
+                color:@text-danger;
+       }
+       .btn.btn-danger:focus{
+           background: @text-danger;
+       }
+   }
+   
+   //li-3
+   .li-3
+   {
+     
+       padding: 12px 5px 12px 30px;
+       
+   }
+   
+   //li-4
+   .li-4
+   {
+       padding: 12px 5px 12px 20px;
+       strong{
+           font-size: 14px;
+       }
+   }
+   
+}
+
+  //orderdtl-table 表格
+   
+   .orderdtl-table.table-bordered{
+       
+       border-top: none;
+     thead  th{
+      padding: 10px 20px !important;
+      border-top: none ;
+      border-bottom: none;
+      
+      text-align:center;  
+      }
+     
+    tbody  tr  td{ 
+         height: 70px;
+         line-height: 70px;
+         padding: 0;
+         text-align: center;
+         
+         //超出隐藏...
+         
+         overflow: hidden;
+         text-overflow: ellipsis;
+         max-width: 120px;
+         white-space:nowrap;
+     }
+      
+    td img{
+         width: 62px; 
+         height: 62px;
+     }
+       
+       //操作按钮
+      .op-list{
+          text-align: center;
+          li{
+              display: inline-block;
+              float:none;
+           
+              
+              
+          }
+          
+          li+li:before{
+              content: "|";
+              margin: 0 3px;
+              color:@text-ash;
+          }
+          
+      }
+      
+      tfoot td{
+         
+          padding: 10px 20px;
+      }
+       
+   }

@@ -1,0 +1,201 @@
+/******购物车*******/
+
+.shopcar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+//表head
+.shopcar-tb-top{
+    background: #f9f9f9;
+    .col-xs-2,
+    .col-xs-4{
+       
+       height: 48px;
+       line-height: 48px;
+      
+       vertical-align: middle;
+      
+       text-align:left;
+       padding-left: 28px;
+    }
+    
+  
+}
+
+
+//表body
+.shopcar-tb-by{
+    margin-top: 12px;
+    padding: 8px 8px 8px 18px;
+    
+    background: #f9f9f9;
+    padding-left: 28px;
+}
+.input[type=checkbox]{
+    margin-right:10px ;
+}
+.shopcar-tb-by1{
+    position: relative;
+    height: 104px;
+  line-height: 104px;
+    background: @text-white;
+   
+    //商品信息
+    
+    .prodinfo{
+        padding-top: 10px;
+      padding-left: 38px;
+        line-height: 25px;
+        //规格与名称
+        .p{  
+            
+            margin-left: 10px;
+            font-size: 14px;
+            p{ line-height: 20px;
+            margin-bottom: 10px;}
+            .mingcheng{
+                max-width: 180px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+              
+               
+            }
+            
+            .xinghao{
+             margin-left: 30px;
+            }
+        }
+    }
+    
+    
+  
+
+  //input-group
+  .input-txt{
+      
+        position: relative;
+        top:30px;
+
+        width:150px;
+        
+        text-align: center;
+      
+       .reduce,
+       .plus,
+       .txt{
+           display: block;
+           width: 24px;
+           height: 24px;
+          line-height: 24px;
+           margin: 0;
+            float: left;
+           border: 1px solid @text-ash;
+           text-align: center;
+           color: @text-base;
+           cursor: pointer;
+
+           
+          
+       }
+        .reduce,
+          .plus{
+          font-size: 18px;
+              
+          }
+        
+        .reduce:active,
+        .plus:active,
+        .reduce:focus,
+        .plus:focus{
+               background: @text-ash-2 !important;
+           }
+       .txt{ 
+           
+            
+           border-left:none ;
+           border-right:none;
+        
+           &:focus{
+             border: none !important;
+             border-top: 1px solid @text-ash!important;
+             border-bottom: 1px solid @text-ash!important;
+           }
+           
+           
+       }
+       
+       .box{
+           
+               height: 30px;
+               line-height: 30px;
+               margin-left: 11px;
+           }
+           
+          
+       
+    }
+    
+    
+     
+    .op a+a{
+               margin-left: 10px;
+     }
+    
+    .shop-img{
+        width:70px;
+        height: 70px;
+        vertical-align: middle;
+        margin-left: 5px;
+    }
+}
+
+
+//line
+.shopcar-tb-by-line{
+    height: 12px;
+    background: #f9f9f9;
+}
+
+//每个大项分割
+
+.shopcar-tb-by-top{
+    margin-top: 24px;
+}
+
+
+//结算
+
+.shop-jisuan{
+    margin-top: 20px;
+    padding-left: 28px;
+    height: 58px;
+    line-height: 58px;
+    
+    .select{
+     
+    }
+    
+    .count{ margin-right: 20px;
+     margin-left: 20px;}
+    .btn.btn-danger{
+        width: 134px;
+         height: 58px;
+    line-height: 58px;
+    padding: 0;
+    text-align: center;
+    }
+}
+
+
+//overflow...
+
+.shopcar-tb-by1 .col-xs-2.type{
+    max-width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+
+}

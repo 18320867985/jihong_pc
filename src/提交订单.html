@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>提交订单</title>
+
+		<link rel="stylesheet" href="Content/Home/cstfont/iconfont.css" />
+		<link rel="stylesheet" href="Content/Home/all.css" />
+		<link rel="stylesheet" type="text/css" href="Content/Home/bs-date/css/bootstrap-datetimepicker.min.css" />
+
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="Content/Home/ie/ie8.css"  />
+		<![endif]-->
+	</head>
+
+	<body class="body-bg">
+		<!--top -->
+		<header>
+			<div class="bg-white">
+
+				<div class="index-head ">
+					<div class="container-12 clearfix">
+						<!--已登陆-->
+						<div class="index-head-wrap ">
+							<div class="index-head-l pull-left">
+								<span class="text-777">你好,</span>
+								<a href="#">
+									<span class="text-danger">admin</span>
+									<span class="iconfont icon-xiala  text-base"></span>
+								</a>
+								<span class="text-ash-2">|</span>
+								<span class="text-777">下午好,欢迎你回来!</span>
+								<span class="text-ash-2">|</span>
+								<a href="#" class="index-head-l-a">
+									<span class=" iconfont icon-xinxi"></span>
+									<span class="text-777">消息</span>
+									<span class="text-danger">0</span>
+									<span class="iconfont icon-xiala  text-base"></span>
+								</a>
+							</div>
+
+							<div class="index-head-r pull-right">
+
+								<a href="#">
+									<span class="text-777">购物车</span>
+									<span class="text-danger">0</span>
+									<span class="iconfont icon-xiala  text-base"></span>
+								</a>
+								<span class="text-ash-2">|</span>
+								<a href="#">帮助中心</a>
+								<span class="text-ash-2">|</span>
+								<a href="#">联系我们</a>
+								<span class="text-ash-2">|</span>
+								<span class="text-777"><a href="#">退出</a></span>
+
+							</div>
+						</div>
+						<!--未登陆-->
+						<div class="index-head-wrap v-hide ">
+							<div class="index-head-l pull-left">
+								<span class="text-777">你好,欢迎来到吉宏园艺网!</span>
+
+							</div>
+
+							<div class="index-head-r pull-right ">
+
+								<a href="#">
+									注册
+								</a>
+								<span class="text-ash-2">|</span>
+								<a href="#">登录</a>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!--logo-->
+				<div class='index-logo container-12 clearfix  relative'>
+					<img alt="logo img" src="images/Home/logo.png" class="pull-left"></img>
+
+				</div>
+
+			</div>
+		</header>
+
+		<!-- 内容-->
+		<section>
+
+			<div class="container-12 bg-white">
+				<div class="tjform ">
+
+					<h4 class="ttl">填写并核对订单信息</h4>
+
+					<div class="tjform-info">
+
+						<div class="tjform-info-ttl clearfix">
+							<h5 class="pull-left"><strong>收货人信息</strong></h5>
+							<a href="#" class="pull-right text-primary">新增收货地址</a>
+						</div>
+						<div class="tjform-info-person clearfix">
+
+							<a class="name"> <span>小李</span> <span>广东</span></a>
+
+							<span class="name2">小李</span>
+
+							<span class="addr">广东 深圳市 福田区  沙头街道下沙xxxxxxxxxxx</span>
+
+							<span class="tel"><span class="glyphicon glyphicon-phone"></span>138***5668</span>
+
+						</div>
+
+						<!--支付方式-->
+						<div class="tjform-info-play">
+							<h5 class="ttl">支付方式</h5>
+
+							<a href="#" class="a">微信支付</a>
+
+							<a href="#" class="a active">在线支付</a>
+							<a href="#">更多>></a>
+						</div>
+
+						<!--送单清单-->
+						<div class="tjform-info-order">
+							<h5 class="ttl">送单清单</h5>
+
+							<table class="table table-bordered ">
+								<thead class="text-center">
+									<th>商品图片</th>
+									<th>商品名称</th>
+									<th>商品单价</th>
+									<th>购买数量</th>
+									<th>合计</th>
+									<th>重量</th>
+									<th>备注</th>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<img src="images/Home/板块图片8.png" alt="商品图片" class="img" />
+										</td>
+
+										<td>
+											发财树 办公室家庭创意盆栽自动吸水净化空气
+										</td>
+										<td>27.68</td>
+										<td>1</td>
+										<td><strong class="text-danger">27.68</strong></td>
+										<td>0.205kg </td>
+										<td>...</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+
+						<!--发票信息-->
+						<div class="tjform-info-piao">
+							<h5 class="ttl">发票信息</h5>
+							<a>普通发票(电子)</a>
+							<a>个人</a>
+							<a>明细</a>
+							<a href="#" class="text-primary"> 修改</a>
+						</div>
+
+						<!--商品总金额-->
+						<div class="tjform-amt clearfix">
+							<div class="pull-right">
+								<p>
+								<label for="">
+									<strong class="text-danger">1</strong>
+									件商品,商品总金额:
+								</label>
+									<span>￥120000</span>
+								</p>
+
+								<p>
+									<label for="">
+								
+								运费:
+								</label>
+									<span>￥6000</span>
+								</p>
+								<p>
+									<label for="">
+									
+								服务费:
+								</label>
+									<span>￥0.00</span>
+								</p>
+							</div>
+
+						</div>
+
+						<!--结算-->
+						<div class="tjform-js">
+							<p class="text-right jiner">
+								<label>	应付总额:</label>
+								<strong class="text-danger">￥27.6</strong>
+							</p>
+							<p class="text-right address">
+								
+								
+								<span>寄送至:广东 深圳市 福田区  沙头街道下沙xxxxxxxxxxx.</span>
+								<span>收货人:李明</span>
+								<span>138****9988</span>
+								
+							</p>
+							
+						</div>
+						
+							
+						<!--提交订单-->
+						<div class="text-right tjform-subimt">
+							<input type="submit" name="" id=""  class="btn btn-danger" value="提交订单" />
+						</div>
+						
+						
+					</div>
+
+				</div>
+
+		</section>
+
+		<footer>
+			<!--页脚导航-->
+			<div class="index-ft">
+
+				<!--页脚标志图片 -->
+				<div class="index-ft-band container-12 text-center">
+
+					<div class="col-xs-3 item">
+						<img src="images/Home/footer-img1.png" alt="页脚标志图片" />
+						<div class="desc">
+							<h4>正品保证</h4>
+							<p>正品货行,值得信赖</p>
+						</div>
+					</div>
+					<div class="col-xs-3 item">
+						<img src="images/Home/footer-img2.png" alt="页脚标志图片" />
+						<div class="desc">
+							<h4>正品保证</h4>
+							<p>正品货行,值得信赖</p>
+						</div>
+					</div>
+
+					<div class="col-xs-3 item">
+						<img src="images/Home/footer-img3.png" alt="页脚标志图片" />
+						<div class="desc">
+							<h4>正品保证</h4>
+							<p>正品货行,值得信赖</p>
+						</div>
+					</div>
+
+					<div class="col-xs-3 item">
+						<img src="images/Home/footer-img4.png" alt="页脚标志图片" />
+						<div class="desc">
+							<h4>正品保证</h4>
+							<p>正品货行,值得信赖</p>
+						</div>
+					</div>
+
+				</div>
+
+				<!--页脚列表 -->
+				<div class="index-ft-list container-12 clearfix ">
+
+					<dl>
+						<dt>新手入门</dt>
+						<dd>
+							<a href="#">购物流程</a>
+						</dd>
+						<dd>
+							<a href="#">会员制度</a>
+						</dd>
+						<dd>
+							<a href="#">订单查询</a>
+						</dd>
+						<dd>
+							<a href="#">发票制度</a>
+						</dd>
+						<dd>
+							<a href="#">常见问题</a>
+						</dd>
+
+					</dl>
+					<dl>
+						<dt>支付方式</dt>
+						<dd>
+							<a href="#">货到付款</a>
+						</dd>
+						<dd>
+							<a href="#">网上支付</a>
+						</dd>
+						<dd>
+							<a href="#">银行转账</a>
+						</dd>
+						<dd>
+							<a href="#">礼品支付</a>
+						</dd>
+						<dd>
+							<a href="#">其他支付</a>
+						</dd>
+
+					</dl>
+					<dl>
+						<dt>配送服务</dt>
+						<dd>
+							<a href="#">配送范围与运费</a>
+						</dd>
+						<dd>
+							<a href="#">配送进度查询</a>
+						</dd>
+						<dd>
+							<a href="#">自提服务</a>
+						</dd>
+						<dd>
+							<a href="#">商品验货与签收</a>
+						</dd>
+
+					</dl>
+					<dl>
+						<dt>售后保障</dt>
+						<dd>
+							<a href="#">退换货政策</a>
+						</dd>
+						<dd>
+							<a href="#">退换货流程</a>
+						</dd>
+						<dd>
+							<a href="#">退款说明</a>
+						</dd>
+						<dd>
+							<a href="#">延保说明页面</a>
+						</dd>
+						<dd>
+							<a href="#">联系客服</a>
+						</dd>
+
+					</dl>
+					<dl>
+						<dt>商家合作</dt>
+						<dd>
+							<a href="#">商家入驻</a>
+						</dd>
+						<dd>
+							<a href="#">商家赢</a>
+						</dd>
+						<dd>
+							<a href="#">平台规则</a>
+						</dd>
+						<dd>
+							<a href="#">企业采购</a>
+						</dd>
+
+					</dl>
+
+				</div>
+
+				<div class="com-footer">
+					<ul>
+						<li>
+							<a href="#">关于吉宏</a>
+						</li>
+						<li>
+							<a href="#">吉宏梦</a>
+						</li>
+						<li>
+							<a href="#">盆栽交易平台</a>
+						</li>
+						<li>
+							<a href="#">吉宏发财树</a>
+						</li>
+						<li>
+							<a href="#">行业信息</a>
+						</li>
+						<li>
+							<a href="#">联系我们</a>
+						</li>
+					</ul>
+
+					<p class="text-center  text-ash">
+						<span>CopyRight</span>
+						<span>@ 2004-2017</span>
+						<span>吉宏ji-hong.cn</span>
+						<span>所有版权</span>
+					</p>
+				</div>
+
+			</div>
+
+		</footer>
+
+		<!--js -->
+		<script src="js/Home/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src=" js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="Content/Home/bs-date/js/bootstrap-datetimepicker-ch.js" type="text/javascript" charset="utf-8"></script>
+
+		<!--[if lte IE 9]>
+			<script src="js/Home/ie/ie8.js" type="text/javascript" charset="utf-8"></script>
+		<![endif]-->
+
+		<script type="text/javascript">
+			
+
+			admin.start(); //经销商母版模块
+
+			//支付方式
+			$(".tjform-info-play .a").click(function() {
+
+				$(".tjform-info-play .a").removeClass('active');
+				$(this).addClass('active');
+			});
+		</script>
+	</body>
+
+</html>

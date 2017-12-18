@@ -1,0 +1,80 @@
+.gys-daohuo{
+   
+   padding: 16px 10px;
+    
+}
+//表单
+.gys-daohuo-form.form-inline{
+padding-top: 12px;
+padding-left: 30px;
+    border:1px solid @text-ash-2;
+    height: 54px;
+    line-height: 54x;
+    
+    .form-group{
+        padding: 0 !important;
+        margin: 0 !important;
+        .form-control{
+            padding: 0 8px;
+            height: 30px;
+          
+            font-size: 12px;
+        }
+        
+        //单价框
+        .txt{
+          width: 150px;  
+        }
+        //日期框
+        .txt2{
+            width: 160px;
+        }
+       
+        
+        .btn.btn-danger{
+            padding: 0;
+             height: 30px;
+             width: 60px;
+             text-align: center;
+             margin-left: 15px;
+        }
+        .iconfont.icon-hengxian{ 
+            font-size: 14px;
+            color:@text-base;
+            vertical-align: middle;
+          }
+         
+          
+    }
+    
+     .form-group+.form-group{
+              margin-left: 20px !important;
+         
+          }
+}
+
+//表格
+.gys-daohuo-table-hw(){
+    padding: 0 5px;
+    height: 40px;
+    line-height: 40px;
+    
+    //overflo
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    
+}
+.gys-daohuo-table {
+     border:none;
+   thead tr th{
+       border-bottom: none;
+       .gys-daohuo-table-hw;
+   } 
+   
+   tbody tr td{
+      .gys-daohuo-table-hw;
+   }
+    
+}

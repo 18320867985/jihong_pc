@@ -1,0 +1,155 @@
+
+/********模糊订购*****/
+
+        
+  .mohu-dg {
+      
+      //查询框
+      .form-group .mohu-dg-txt{
+          width: 200px ;
+          
+      }
+       //查询按钮
+        .mohu-dg-btn{
+            margin-left: 20px;
+        }
+        
+   //加入购物车
+   .mohu-shopcar{
+       border:1px solid @text-danger;
+       color:@text-danger;
+       background: none;
+       
+       transition: all  .5s;
+       
+       &:hover{
+       color:@text-white;
+       background:@text-danger;
+       }
+   }
+      
+     //表格2
+     
+     .mohu-dg-table-2 {
+         
+        tbody td{
+             
+             height: 78px; 
+             line-height: 78px;
+          
+             padding: 0;
+             max-width: 100px;
+             text-overflow: ellipsis;
+             overflow: hidden;
+             white-space: nowrap;
+             &.img img{
+                 height: 62px;
+                 width: 68px;
+             }
+             
+               
+              //操作
+              .op{
+                     text-align: center;
+                     a{
+                         margin: 0;
+                         &:hover {
+                             color:@text-warning;
+                         }
+                     }
+                     li{  display:inline-block;
+                      float: none;
+                      margin-right: 10px;
+                     }
+                     
+                     li+li:before{
+//                       content:"|";
+                         padding: 0 10px;
+                         color:@text-ash;
+                     }
+                     
+                 
+                 }
+                 
+       
+           
+          
+         }
+            
+      tbody td.ttl{
+                 height: 40px;
+                 line-height: 40px;
+                 padding-left: 22px;
+           
+            } 
+            
+         //数量
+         .mohu-dg-table-2-sl{
+             position: relative;
+            .sl{
+                   position: relative; 
+                     left: 50%;
+                    padding-top: 20px;
+                    margin-left: -50px;
+                    width:100px !important; 
+                    height: 21px !important;
+                   line-height: 21px !important;
+                   text-align: center;
+                 
+               
+                 .txt{
+                  
+              
+                     width:35px !important; 
+                      height: 21px !important;
+                    vertical-align: middle;
+                    
+                      margin: 0 2px;
+                     text-align: center;
+                      font-size:12px;
+                      border: 1px slid @text-ash;
+                      padding:0;
+                 }
+                 .reduce,
+                 .plus{
+                     font-size:12px;
+                     cursor: pointer;
+                     vertical-align: middle;
+                     &:hover{
+                         color:@text-warning !important;
+                     }
+                 }
+             }
+         }
+          
+       //页脚  
+       tfoot td{
+           
+           height: 40px;
+           line-height: 40px;
+           padding: 5px 0 5px 25px;
+           
+           .pull-right{
+                height: 20px;
+           line-height: 20px;
+           padding-top: 6px;
+           .hj{ margin-left: 20px;}
+           .btn.btn-danger{
+                margin-left: 10px;
+                padding: 12px 30px;
+             
+                 color:@text-white;
+                  background:@text-danger;
+           }
+           }
+           
+           .checkbox label{
+               padding-left: 0 !important;
+           }
+       }     
+            
+         
+     }
+        
+}
+

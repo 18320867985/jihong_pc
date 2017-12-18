@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>注册成功</title>
+		
+		<link rel="stylesheet" href="Content/Home/cstfont/iconfont.css" />
+		<link rel="stylesheet" href="Content/Home/all.css" />
+		
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="Content/Home/ie/ie8.css" />
+		<![endif]-->
+	
+	</head>
+	<body>
+		
+		<!--top -->
+		<header>	
+			<div id="" class="com-head-boxshadow">
+				<div class="container-12 ">
+					<div class="com-head clearfix ">
+						<a href="#"><img src="images/Home/logo.png" class="com-head-logo" alt="logo img" /></a> <span ></span> <a href="#">注册成功</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<section >
+			
+			<div class="reg-ok  reg container-12">
+				
+				<div class="reg-ok-img text-center relative">
+					<div class="" >
+						<img src="images/Home/reg-ok.png" alt="find password"  />
+						<strong>
+							恭喜你,注册成功
+						</strong>
+						<br />
+						<span class="reg-ok-img-span"><span id="settime" class="text-warning">10</span>秒后自动跳转</span>
+					</div>
+									
+				</div>
+			
+				<p class="text-center">你可以用它直接登录吉宏园艺并享受相关服务</p>
+				
+				<div class="text-center reg-ok-link ">
+					<a href="#" class="rd">返回首页</a>
+					<a href="#" class="rd">个人中心</a>
+				</div>
+			</div>
+		
+		</section>
+			
+		<footer>
+			<div class="com-footer">
+				<ul>
+					<li><a href="#">关于吉宏</a></li>
+					<li><a href="#">吉宏梦</a></li>
+					<li><a href="#">盆栽交易平台</a></li>
+					<li><a href="#">吉宏发财树</a></li>
+					<li><a href="#">行业信息</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+				
+				<p class="text-center  text-ash">
+					<span>CopyRight</span> 
+					<span>@ 2004-2017</span> 
+					<span>吉宏ji-hong.cn</span>
+					<span>所有版权</span>
+				</p>
+			</div>
+		</footer>
+		
+		
+		<!--js -->
+		<script src="js/Home/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!--[if lte IE 9]>
+			<script src="js/Home/ie/ie8.js" type="text/javascript" charset="utf-8"></script>
+		<![endif]-->
+		
+		<script type="text/javascript">
+			
+			$(function(){
+				
+			var sum=parseInt(document.getElementById("settime").innerText.trim());
+			
+			setInterval(function(){
+				
+				if(sum>=0){
+					sum=sum-1;
+					if(sum>=1){
+					document.getElementById("settime").innerText='0'+sum;
+			
+					}
+					if(sum==0)
+					{
+						//页面跳转
+					//window.location.href="login.html";
+					}
+					
+				}
+
+
+				
+				},1000);
+				
+			});
+		</script>
+
+	</body>
+
+</html>

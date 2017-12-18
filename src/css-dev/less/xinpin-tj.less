@@ -1,0 +1,223 @@
+
+
+/******新品推荐*******/
+
+.xinpin-tj{
+    padding:16px 10px 10px 10px;
+  
+}
+
+.xinpin-tj-cont{
+    min-height: 300px;
+    border:1px solid @text-ash-2 ;  
+}
+//标题
+.xinpin-tj-ttl{
+    position: relative;
+    height:30px;
+    padding-right: 10px;
+        margin: 0;
+    border-bottom:2px solid @text-danger ;
+    .btn {
+        padding: 0 20px;
+        margin: 0 !important;
+        height:30px;
+        background: @text-danger;
+        color:@text-white;
+    }
+    
+    a{
+       position: relative;
+       top:5px;
+       
+       span{
+           margin: 0 3px;
+       }
+    }
+    
+}
+
+//按钮列表
+
+.xinpin-tj-btns{
+    margin-top: 15px;
+    padding-left: 5px;
+     .btn{
+        
+        width: 70px;
+        height: 24px;
+        line-height: 24px;
+        padding: 0;
+        
+        text-align: center;
+        
+        .glyphicon{ color:#a0a0a0;}
+    }
+    
+    a:active{
+        outline: none;
+       box-shadow: none;
+      
+    }
+    a.btn-danger{
+         .glyphicon{ color:@text-white;}
+    }
+    
+    
+}
+
+//图片列表
+
+.xinpin-tj-thumbnail{
+    
+    margin-top: 10px;
+    
+  .col-xs-3 {
+      padding-left: 8px;
+      padding-right: 5px;
+  }
+    //图片
+    .thumbnail{
+   
+         
+         width: 220px !important;
+         
+       img{
+            width: 220px !important; 
+            height: 220px;
+            transition: all 1s;
+       } 
+       
+        //单价
+        .dj{
+            margin-top: 15px;
+            font-size: 14px;
+            
+            .iconfont{
+                vertical-align:bottom;
+                 font-size: 14px;
+            }
+        }
+       //描述
+        .dec{
+            margin-top: 15px;
+            line-height: 20px;
+            height: 40px;
+            overflow: hidden;
+             transition: all 1s;
+        }
+        
+        .shop{
+            margin-top: 10px;
+              width:100%;
+            
+              //文本框
+            .xp-txt{
+            
+          
+              width:28px ;
+              height: 29px;
+             
+              font-size: 12px;
+              vertical-align: middle;
+              text-align: center;
+              margin-top: 0;
+              padding:0;
+              
+              border-radius: 0px;
+              border: 1px solid @text-ash;
+              
+               &:hover{
+                 border: 1px solid @text-warning;
+             }
+            }
+            
+            //加减
+            .btn-group-vertical.btn-group-xs{
+              
+              width:20px ;
+              height: 30px; 
+               margin-left:0x ;
+               vertical-align: middle;
+              .btn{
+                  height: 15px;
+                  line-height: 15px;
+                  font-size: 12px;
+                   margin: 0;
+                   padding-left: 0;
+                   padding-right: 0;
+                   color:@text-ash;
+                   
+                //焦点
+               &:focus{
+                   background: none;
+               }
+               
+                    
+                //焦点
+               &:hover{
+                   color:@text-warning;
+                   background: none;
+               }
+               
+              }
+              .btn+.btn{ border-top: none;}
+              
+             
+            }
+            
+            //购物车
+            .xp-shop{
+              width:30px ;
+              height: 30px;
+              padding: 0;
+              margin-left:2px ;
+              
+              vertical-align: middle;
+              text-align: center;
+              border: 1px solid @text-ash-2;
+              border-radius:0;
+              text-align: center;
+              background: none;
+              outline: none;
+              .iconfont{
+                
+                  color:@text-danger;
+                  font-size: 18px;
+              }
+             
+             &:hover{
+                 border: 1px solid @text-warning;
+             }
+              
+            }
+            //立即购买
+              .xp-liji{
+                  width: 90px;
+                  height: 28px;
+                  vertical-align: middle;
+                  padding: 0;
+                  border-radius: 4px;
+                  margin: 0 !important;
+                  margin-right: 0px;
+                  margin-left: 10px;
+                  background: @text-danger;
+                  border:1px solid @text-danger;
+                  color:@text-white;
+                  text-align: center;
+                  outline: none;
+                  &:active{
+                      
+                  }
+              }
+        }
+    }
+    
+     .thumbnail:hover img{
+         transform: scale(1.05);
+     }
+      .thumbnail:hover  .dec{
+       color:@text-danger;
+     }
+    
+}

@@ -1,0 +1,201 @@
+/*******供货计划**********/
+
+.gonghuo-jh {}
+
+// 切换tab
+@btn-bg: rgb(0, 160, 234); // 选择按钮背景
+.gonghuo-jh-tab {
+    margin-bottom: 10px;
+    border-bottom: 1px solid @text-ash-3;
+    a {
+        display: block;
+        float: left;
+        margin: 0 !important;
+        padding: 6px 35px;
+        font-size: 14px;
+        background: #fff;
+        border: 1px solid @btn-bg;
+        &.active {
+            background: @btn-bg;
+            color: #fff;
+        }
+        &+a {
+            margin-left: 0px;
+            border-left: 1px solid @btn-bg;
+        }
+        &:last-child {
+            border-right: 1px solid @btn-bg;
+        }
+    }
+}
+
+.gonghuo-jh-cont {
+    padding: 10px;
+}
+
+//添加按钮
+.gonghuo-jh-btn {
+    margin-bottom: 20px;
+    input {
+        margin: 0 !important;
+        padding: 6px 20px;
+        font-size: 14px;
+        color: #fff;
+        background: @btn-bg;
+        border: none;
+        &:active {
+            background: darken(@btn-bg, 10%);
+            border: none;
+        }
+    }
+}
+
+//标题
+.gonghuo-jh-ttl {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    //box框
+    .box {
+        width: 46px;
+        height: 28px;
+        text-align: center;
+        font-weight: 600;
+        color: @text-777;
+        border: 1px solid @btn-bg;
+    }
+}
+
+//表格
+.gonghuo-jh-table {
+    // overflow ...
+    tbody td {
+        max-width: 120px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        // 删除按钮
+        .del {
+            &:hover {
+                color: @text-warning;
+                cursor: pointer;
+            }
+        }
+        input[type=text] {
+            width: 40px;
+            height: 24px;
+            text-align: center;
+            border: 1px solid @text-ash;
+        }
+    }
+    //表尾
+    tfoot td {
+        padding: 10px !important;
+        a {
+            padding: 6px 12px;
+            border: 1px solid @btn-bg;
+            background: #fff;
+            color: @btn-bg;
+            transition: all .8s;
+            &:hover {
+                background: @btn-bg;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// 弹出框
+.gonghuo-jh-model {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+   // background: rgba(54, 54, 54, .3);
+ 
+    .dialog {
+        @w: 700px;
+        @h: 400px;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        width: @w;
+        min-height: @h;
+        margin-left: -@w/2px;
+        margin-top: -@h/2-50px;
+        background: #fff;
+        
+        box-shadow: 1px 1px 2px #ccc, -1px -1px 2px #ccc;
+        //header
+        header {
+            padding: 10px 15px;
+            font-size: 18px;
+            background: @text-ash-3;
+            // 关闭的icon
+            .iconfont {
+                &:hover {
+                    color: @text-warning;
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        //内容主体
+        .search {
+           margin-top: 20px !important;
+            .input-group {
+                width: 400px;
+                margin: 0 auto;
+                border-radius: 0 !important;
+                
+                .form-control{
+                    border-radius: 0;
+                }
+                //btn
+                 .btn{
+                     padding-left: 25px;
+                     padding-right: 25px;
+                     border-radius: 0;
+                     white-space: 5px;
+                 }
+            }
+        }
+        
+        //表格
+        .tb{
+            padding: 20px;
+            table thead th{
+                text-align: center;
+                color:#666;
+            }
+            tbody td{
+                @td-h:50px;
+                 line-height: @td-h;
+                 padding: 5px;
+                text-align: center;
+                max-width: 60px;
+                 overflow: hidden;
+                 text-overflow: ellipsis;
+                 white-space: nowrap;
+                img{
+                    width: @td-h;
+                    height: @td-h;
+                    float: none;
+                }
+                
+                // 货币图标
+                .icon-renminbi{
+                    vertical-align: middle;
+                    font-size: 16px;
+                   
+                }
+                
+                .btn.btn-sm{
+                    padding: 2px 7px;
+                }
+            }
+            
+        }
+    }
+}
