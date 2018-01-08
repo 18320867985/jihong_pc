@@ -2,7 +2,8 @@
  *	公共类库
 */
 	
- common=(function($){
+	
+var  common=(function($){
 	
 	/***url对象***/
 	var url_fn={

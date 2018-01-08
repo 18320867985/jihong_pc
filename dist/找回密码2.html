@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>找回密码</title>
+		
+		<link rel="stylesheet" href="Content/Home/cstfont/iconfont.css" />
+		<link rel="stylesheet" href="Content/Home/all.css" />
+		
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="Content/Home/ie/ie8.css" />
+		<![endif]-->
+
+	
+	</head>
+	<body>
+		
+		<!--top -->
+		<header >	
+			<div id="" class="com-head-boxshadow">
+				<div class="container-12 ">
+					<div class="com-head clearfix ">
+						<a href="#"><img src="images/Home/logo.png" class="com-head-logo" alt="logo img" /></a> <span ></span> <a href="#">找回密码</a>
+					</div>
+				</div>
+			</div>
+			
+		</header>
+		
+		<section >
+			
+			<div class="findpwd  reg container-12">
+				
+				<div class="findpwd-img text-center">
+					<img src="images/Home/pwd2.png" class="inline-block-none" alt="find password" />
+				</div>
+				
+				<div class="reg-cont">
+						<form action="#" class="findpwd-2">
+							<ul>
+								
+								<li class="clearfix reg-cont-item">
+									<label for="txt_name" class="reg-cont-item-l  col-xs-2 text-right row">重置密码</label>
+									<div class="col-xs-8 reg-cont-item-r ">
+										<input type="password" name="yz1" id="txt_name" class="box" value="" placeholder="输入重置密码" />
+									</div>
+									<span class="text-ash reg-cont-item-ttl col-xs-2 row ">(*必填)</span>
+								</li>
+
+							
+							
+								<li class="clearfix reg-cont-item">
+									<label for="txt_name" class="reg-cont-item-l  col-xs-2 text-right row">确认密码</label>
+									<div class="col-xs-8 reg-cont-item-r ">
+										<input type="password" name="yz2" id="txt_name" class="box" value="" placeholder="输入确认密码" />
+									</div>
+									<span class="text-ash reg-cont-item-ttl col-xs-2 row ">(*必填)</span>
+								</li>
+
+								<li class="clearfix reg-cont-item reg-cont-item-btn ">
+									<div class="col-xs-8  col-xs-offset-1 ">
+										<input type="submit" name="" class=" btn btn-danger btn-block  "  value="下一步" />
+
+								</li>
+								
+							</ul>
+						</form>
+				</div>
+			</div>
+		
+		</section>
+			
+		<footer>
+			<div class="com-footer">
+				<ul>
+					<li><a href="#">关于吉宏</a></li>
+					<li><a href="#">吉宏梦</a></li>
+					<li><a href="#">盆栽交易平台</a></li>
+					<li><a href="#">吉宏发财树</a></li>
+					<li><a href="#">行业信息</a></li>
+					<li><a href="#">联系我们</a></li>
+				</ul>
+				
+				<p class="text-center  text-ash">
+					<span>CopyRight</span> 
+					<span>@ 2004-2017</span> 
+					<span>吉宏ji-hong.cn</span>
+					<span>所有版权</span>
+				</p>
+			</div>
+		</footer>
+		
+		<!--js -->
+		<script src="js/Home/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+		
+		<!--[if lte IE 9]>
+			<script src="js/Home/ie/ie8.js" type="text/javascript" charset="utf-8"></script>
+		<![endif]-->
+		
+		<script type="text/javascript">
+			//验证
+			$('.findpwd-2')
+				.bootstrapValidator({
+					
+					fields: {
+						
+						yz1: {
+
+							validators: {
+								notEmpty: {
+									message: ' 两次密码不能为空！'
+								},//字符串长度验证
+			                    stringLength: {
+			                        min: 8, //最小值
+			                        max: 30, //最大值
+			                        message: '密码长度8到30位！'
+			                    },
+							}
+						
+						},
+						yz2: {
+							validators: {
+								notEmpty: {
+									message: '确认密码不能为空！'
+								},identical: { //确认密码验证 比较两次密码是否相同
+			                        field: 'yz1',  //比较的字段
+			                        message: '两次密码不相同！'
+			                    },
+								
+							}
+						
+						},
+							
+             
+					}
+				
+				})
+				.on('success.form.bv', function(e) {
+						e.preventDefault();
+						
+						
+					
+					alert('提交中...')
+   				
+						//异步提交事件 
+							
+			});
+			
+			
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>模糊订购</title>
+
+		<link rel="stylesheet" href="Content/Home/cstfont/iconfont.css" />
+		<link rel="stylesheet" href="Content/Home/all.css" />
+		<link rel="stylesheet" type="text/css" href="Content/Home/bs-date/css/bootstrap-datetimepicker.min.css" />
+		<link rel="stylesheet" href="Content/Home/icheck/skins/flat/red.css" />
+	</head>
+
+	<body>
+		<!--top -->
+		<header>
+			<div class="bg-white">
+
+				<div class="index-head ">
+					<div class="container-12 clearfix">
+						<!--已登陆-->
+						<div class="index-head-wrap ">
+							<div class="index-head-l pull-left">
+								<span class="text-777">你好,</span>
+								<a href="#">
+									<span class="text-danger">admin</span>
+									<span class="iconfont icon-xiala  text-base"></span>
+								</a>
+								<span class="text-ash-2">|</span>
+								<span class="text-777">下午好,欢迎你回来!</span>
+								<span class="text-ash-2">|</span>
+								<a href="#" class="index-head-l-a">
+									<span class=" iconfont icon-xinxi"></span>
+									<span class="text-777">消息</span>
+									<span class="text-danger">0</span>
+									<span class="iconfont icon-xiala  text-base"></span>
+								</a>
+							</div>
+
+							<div class="index-head-r pull-right">
+
+								<a href="#">
+									<span class="text-777">购物车</span>
+									<span class="text-danger">0</span>
+									<span class="iconfont icon-xiala  text-base"></span>
+								</a>
+								<span class="text-ash-2">|</span>
+								<a href="#">帮助中心</a>
+								<span class="text-ash-2">|</span>
+								<a href="#">联系我们</a>
+								<span class="text-ash-2">|</span>
+								<span class="text-777"><a href="#">退出</a></span>
+
+							</div>
+						</div>
+						<!--未登陆-->
+						<div class="index-head-wrap v-hide ">
+							<div class="index-head-l pull-left">
+								<span class="text-777">你好,欢迎来到吉宏园艺网!</span>
+
+							</div>
+
+							<div class="index-head-r pull-right ">
+
+								<a href="#">
+									注册
+								</a>
+								<span class="text-ash-2">|</span>
+								<a href="#">登录</a>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!--logo-->
+				<div class='index-logo container-12 clearfix  relative'>
+					<img alt="logo img" src="images/Home/logo.png" class="pull-left"></img>
+					<!--search box -->
+					<div class="index-search-big">
+						<div id="" class="index-search clearfix">
+
+							<input type="text" name="" id="" value="" class="index-search-input" placeholder="发财树" />
+							<input type="submit" id="" name="" class="index-search-submit btn btn-danger  rd-no" value="搜索" />
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</header>
+
+		<!--导航-->
+		<nav>
+			<div class="admin-nav">
+
+				<div class="container-12 clearfix  relative">
+					<a href="#" class="ttl">经销商中心</a>
+
+					<ul class="admin-nav-list pull-left  ">
+						<li class="active">
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">定制订单</a>
+						</li>
+						<li>
+							<a href="#">供货计划</a>
+						</li>
+						<li>
+							<a href="#">新品推荐</a>
+						</li>
+
+					</ul>
+
+					<div id="" class="admin-nav-btn dropdown">
+
+						<button type="button" data-toggle="dropdown" class=" btn btn-default rd-no  pull-right">模糊订购
+					
+					<span class="iconfont icon-xiala  "></span>
+					</button>
+
+						<ul class="dropdown-menu  dropdown-menu-right clearfix">
+							<li>
+								<a href="#">模糊订购1</a>
+							</li>
+							<li>
+								<a href="#">模糊订购2</a>
+							</li>
+							<li>
+								<a href="#">模糊订购3</a>
+							</li>
+							<li>
+								<a href="#">模糊订购4</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- 内容-->
+		<section>
+
+			<!--内容-->
+			<div class="admin-cont">
+				<div class="container-12  clearfix ">
+
+					<!--左边列表-->
+					<div class="admin-cont-l pull-left">
+
+						<div class="admin-cont-l-list">
+
+							<!--list-item-->
+							<div class="ttl">
+								<a href="#" class="link-url">订单列表</a>
+							</div>
+
+							<!--list-item-->
+							<div class="ttl">
+								<a href="#" class="link-url">
+									对账单
+								</a>
+								<span class="iconfont icon-fx-down"></span>
+							</div>
+
+							<div class="cont " id="admin-col-2">
+								<a href="#" class="link-url">付款明细</a>
+								<a href="#" class="link-url">收款明细</a>
+							</div>
+							<!--list-item-->
+							<div class="ttl">
+								<a href="#" class="link-url">收藏夹</a>
+
+							</div>
+
+							<!--list-item-->
+							<div class="ttl">
+								<a href="#" class="link-url">咨询/回复</a>
+
+							</div>
+							<!--list-item-->
+							<div class="ttl">
+								<a href="#" class="link-url">基本信息 </a>
+								<span class="iconfont icon-fx-down"></span>
+							</div>
+
+							<div class="cont  " id="admin-col-3">
+								<a href="#" class="link-url">密码修改</a>
+								<a href="#" class="link-url">收货地址</a>
+							</div>
+
+							<!--list-item-->
+							<div class="ttl">
+
+								<a href="#" class="link-url">
+									投诉管理
+								</a>
+								<span class="iconfont icon-fx-down"></span>
+							</div>
+
+							<div class="cont  " id="admin-col-4">
+								<a href="#" class="link-url">投诉编辑</a>
+								<a href="#" class="link-url">投诉列表</a>
+							</div>
+
+						</div>
+					</div>
+
+					<!--右边内容 -->
+					<div class="admin-cont-r pull-right">
+
+						<!--标头-->
+						<h4 class="ttl text-primary">模糊订购</h4>
+
+						<div class="mohu-dg ">
+
+							<!--搜索订单-->
+							<div class="zhineng-dg-serach form-inline clearfix">
+
+								<div class="form-group input-group-sm  clearfix ">
+
+									<label for="info_1" class=" text-right ">商品名称:</label>
+
+									<input type="text" id="info_1" class="form-control  rd-no2 mohu-dg-txt" value="" placeholder="输入商品名称" />
+
+									<input type="button" name="" id="" class="btn btn-danger btn-sm mohu-dg-btn" value="立即查询" />
+
+								</div>
+
+							</div>
+
+							<!--表格-->
+							<div class="zhineng-dg-table">
+
+								<!--表格-1-->
+								<table class=" table table-bordered text-center table-hover">
+
+									<thead>
+
+										
+										<th class="text-center">存货编号</th>
+										<th class="text-center">商品名称</th>
+										<th class="text-center">规格</th>
+										<th class="text-center">型号</th>
+										<th class="text-center">供应商</th>
+										<th class="text-center">单位</th>
+										<th class="text-center">装箱数量</th>
+										<th class="text-center">订购数量</th>
+										<th class="text-center">单价</th>
+										<th class="text-center">金额</th>
+										<th class="text-center">
+											操作
+										</th>
+
+									</thead>
+
+									<tbody>
+										<tr>
+
+											
+											<td>CC801201</td>
+											<td>发财树</td>
+											<td>A</td>
+											<td>A1</td>
+											<td>xxx公司</td>
+											<td>箱</td>
+											<td>20</td>
+
+											<td class="num">
+												<span class="reduce">-</span>
+												<input type="text" name="" id="" value="20" style="width: 30px; text-align: center;" />
+												<span class="plus">+</span>
+											</td>
+											<td>40</td>
+											<td>800</td>
+											<td>
+												<input type="button" name="" id="" class="btn btn-xs mohu-shopcar" value="加入购物车" />
+											</td>
+
+										</tr>
+
+										<tr>
+
+										
+											<td>CC801201</td>
+											<td>发财树</td>
+											<td>A</td>
+											<td>A1</td>
+											<td>xxx公司</td>
+											<td>箱</td>
+											<td>20</td>
+
+											<td class="num">
+												<span class="reduce">-</span>
+												<input type="text" name="" id="" value="20" style="width: 30px; text-align: center;" />
+												<span class="plus">+</span>
+											</td>
+											<td>40</td>
+											<td>800</td>
+											<td>
+												<input type="button" name="" id="" class="btn btn-xs mohu-shopcar" value="加入购物车" />
+											</td>
+
+										</tr>
+
+										<tr>
+
+										
+											<td>CC801201</td>
+											<td>发财树发财树发财树发财树发财树发财树发财树发财树发财树发财树</td>
+											<td>A</td>
+											<td>A1</td>
+											<td>xxx公司</td>
+											<td>箱</td>
+											<td>20</td>
+
+											<td class="num">
+												<span class="reduce">-</span>
+												<input type="text" name="" id="" value="20" style="width: 30px; text-align: center;" />
+												<span class="plus">+</span>
+											</td>
+											<td>40</td>
+											<td>800</td>
+											<td>
+												<input type="button" name="" id="" class="btn btn-xs mohu-shopcar" value="加入购物车" />
+											</td>
+
+										</tr>
+
+										<tr>
+
+										
+											<td>CC801201</td>
+											<td>发财树</td>
+											<td>A</td>
+											<td>A1</td>
+											<td>xxx公司</td>
+											<td>箱</td>
+											<td>20</td>
+
+											<td class="num">
+												<span class="reduce">-</span>
+												<input type="text" name="" id="" value="20" style="width: 30px; text-align: center;" />
+												<span class="plus">+</span>
+											</td>
+											<td>40</td>
+											<td>800</td>
+											<td>
+												<input type="button" name="" id="" class="btn btn-xs mohu-shopcar" value="加入购物车" />
+											</td>
+
+										</tr>
+
+										<tr>
+
+											
+											<td>CC801201</td>
+											<td>发财树</td>
+											<td>A</td>
+											<td>A1</td>
+											<td>xxx公司</td>
+											<td>箱</td>
+											<td>20</td>
+
+											<td class="num">
+												<span class="reduce">-</span>
+												<input type="text" name="" id="" value="20" style="width: 30px; text-align: center;" />
+												<span class="plus">+</span>
+											</td>
+											<td>40</td>
+											<td>800</td>
+											<td>
+												<input type="button" name="" id="" class="btn btn-xs mohu-shopcar" value="加入购物车" />
+											</td>
+
+										</tr>
+
+										<tr>
+
+										
+											<td>CC801201</td>
+											<td>发财树</td>
+											<td>A</td>
+											<td>A1</td>
+											<td>xxx公司</td>
+											<td>箱</td>
+											<td>20</td>
+
+											<td class="num">
+												<span class="reduce">-</span>
+												<input type="text" name="" id="" value="20" style="width: 30px; text-align: center;" />
+												<span class="plus">+</span>
+											</td>
+											<td>40</td>
+											<td>800</td>
+											<td>
+												<input type="button" name="" id="" class="btn btn-xs mohu-shopcar" value="加入购物车" />
+											</td>
+
+										</tr>
+
+										<tr>
+
+											
+											<td>CC801201</td>
+											<td>发财树</td>
+											<td>A</td>
+											<td>A1</td>
+											<td>xxx公司</td>
+											<td>箱</td>
+											<td>20</td>
+
+											<td class="num">
+												<span class="reduce">-</span>
+												<input type="text" name="" id="" value="20" style="width: 30px; text-align: center;" />
+												<span class="plus">+</span>
+											</td>
+											<td>40</td>
+											<td>800</td>
+											<td>
+												<input type="button" name="" id="" class="btn btn-xs mohu-shopcar" value="加入购物车" />
+											</td>
+
+										</tr>
+
+									</tbody>
+
+								</table>
+
+								<!--表格-2--->
+								<table class="mohu-dg-table-2 table table-bordered text-center ">
+
+									<thead>
+										<th class="text-center ">
+											<input type="checkbox" name="" id="" value="" />
+
+										</th>
+										<th class="text-center">商品信息</th>
+										<th class="text-center">商品名称</th>
+										<th class="text-center">型号</th>
+										<th class="text-center">数量</th>
+										<th class="text-center">单价(元)</th>
+										<th class="text-center">合计(元)</th>
+										<th class="text-center">操作</th>
+
+									</thead>
+
+									<tbody>
+										<!--item-->
+										<tr>
+											<td colspan="8" class="text-left ttl">
+												<label for="">
+											<input type="checkbox" name="" id="" value="" />
+											玫瑰之约
+										</label>
+
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<input type="checkbox" name="" id="" value="" />
+											</td>
+											<td class="img">
+												<img src="images/Home/板块图片7.png" alt="商品图片" />
+											</td>
+											<td>发财树发财树发财树发财树发财树发财树发财树发财树发财树发财树发财树发财树发财树发财树</td>
+											<td>A1</td>
+											<td>
+												20
+											</td>
+											<td class="mohu-dg-table-2-sl relative">
+												<div class="sl common-math-js">
+													<span class="reduce iconfont icon-jian "></span>
+													<input type="text" name="" id="" value="1" class="txt" />
+													<span class="plus iconfont icon-jia  "></span>
+													<br>
+													<span>箱(20盒)</span>
+												</div>
+
+											</td>
+											<td>发财树</td>
+											<td class="">
+												<ul class="op">
+													<li>
+														<a href="">移入收藏</a>
+													</li>
+													
+													<li>
+														<a href="">删除</a>
+													</li>
+												</ul>
+											</td>
+
+										</tr>
+										
+									</tbody>
+
+									<tfoot>
+										<tr>
+											<td colspan="8" class="text-right  ">
+												<div class=" pull-left checkbox">
+													<label for="allck">
+												<input type="checkbox" name="" id="allck" value="" /> 全选
+													</label>
+
+												</div>
+
+												<div class="pull-right">
+													<span>已选
+													<span class="text-danger">3</span> 箱商品
+													</span>
+
+													<span class="hj">合计:<strong class="text-danger">167.88</strong></span>
+													<input type="button" name="" id="" class="btn btn-danger rd-no" value="去结算" />
+												</div>
+
+											</td>
+										</tr>
+									</tfoot>
+
+								</table>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+		</section>
+
+		<footer>
+			<div class="com-footer">
+				<ul>
+					<li>
+						<a href="#">关于吉宏</a>
+					</li>
+					<li>
+						<a href="#">吉宏梦</a>
+					</li>
+					<li>
+						<a href="#">盆栽交易平台</a>
+					</li>
+					<li>
+						<a href="#">吉宏发财树</a>
+					</li>
+					<li>
+						<a href="#">行业信息</a>
+					</li>
+					<li>
+						<a href="#">联系我们</a>
+					</li>
+				</ul>
+
+				<p class="text-center  text-ash">
+					<span>CopyRight</span>
+					<span>@ 2004-2017</span>
+					<span>吉宏ji-hong.cn</span>
+					<span>所有版权</span>
+				</p>
+			</div>
+		</footer>
+
+		<!--js -->
+		<script src="js/Home/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src=" js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="Content/Home/bs-date/js/bootstrap-datetimepicker-ch.js" type="text/javascript" charset="utf-8"></script>
+		<script src="Content/Home/icheck/icheck.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--[if lte IE 9]>
+			<script src="js/Home/ie/ie8.js" type="text/javascript" charset="utf-8"></script>
+		<![endif]-->
+
+		<script type="text/javascript">
+			
+
+			$(document).ready(function() {
+				$('input').iCheck({
+					checkboxClass: 'icheckbox_flat-red',
+					radioClass: 'iradio_flat-red',
+					increaseArea: '20%' // optional
+				});
+			});
+	
+			admin.start(); //经销商母版模块
+		</script>
+	</body>
+
+</html>

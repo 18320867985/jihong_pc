@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>找回密码</title>
+
+		<link rel="stylesheet" href="Content/Home/cstfont/iconfont.css" />
+		<link rel="stylesheet" href="Content/Home/all.css" />
+
+		<!--[if lte IE 8]>
+			<link rel="stylesheet" href="Content/Home/ie/ie8.css" />
+		<![endif]-->
+
+	</head>
+
+	<body>
+
+		<!--top -->
+		<header>
+			<div id="" class="com-head-boxshadow">
+				<div class="container-12 ">
+					<div class="com-head clearfix ">
+						<a href="#"><img src="images/Home/logo.png" class="com-head-logo" alt="logo img" /></a> <span></span>
+						<a href="#">找回密码</a>
+					</div>
+				</div>
+			</div>
+
+		</header>
+
+		<section>
+
+			<div class="findpwd  reg container-12">
+
+				<div class="findpwd-img text-center">
+					<img src="images/Home/pwd1.png" class="inline-block-none" alt="find password" />
+				</div>
+
+				<div class="reg-cont">
+					<form action="#" class="findpwd-1">
+						<ul>
+
+							<li class="clearfix reg-cont-item">
+								
+								<label for="txt_name" class="reg-cont-item-l control-label  col-xs-2 text-right row">用户名</label>
+								<div class="col-xs-8 reg-cont-item-r ">
+									<input type="text" name="yz1" id="txt_name" class="box " value="" placeholder="输入用户名/已验证的手机号码" />
+								</div>
+								<span class="text-ash reg-cont-item-ttl col-xs-2 row ">(*必填)</span>
+							</li>
+
+							<li class="clearfix reg-cont-item">
+								<label for="text_pwd" class="reg-cont-item-l  col-xs-2 text-right row">验证码</label>
+								<div class="col-xs-6 reg-cont-item-r ">
+									<input type="text" name="yz2" id="text_pwd" class="box " value="" placeholder="输入验证码" />
+								</div>
+								<a class="btn  btn-default rd-no col-xs-2 row  yzm" id="" value="获取验证码">
+									<img src="images/Home/yzm.png" alt="验证码" />
+								</a>
+
+								<span class="text-ash reg-cont-item-ttl col-xs-2 row " style="margin-left: 0px;">(*必填)</span>
+							</li>
+							<li class="clearfix reg-cont-item">
+								<label for="txt_phone" class="reg-cont-item-l  col-xs-2 text-right row">手机验证码</label>
+								<div class="col-xs-6 reg-cont-item-r ">
+									<input type="text" name="yz3" id="txt_phone" maxlength="11" class="box " value="" placeholder="输入手机验证码" />
+								</div>
+								<input type="button" class="btn btn-success rd-no col-xs-2 row" id="" value="获取验证码" />
+								<span class="text-ash reg-cont-item-ttl col-xs-2 row  inline-block" style="margin-left: 15px;">(*必填)</span>
+							</li>
+
+							<li class="clearfix reg-cont-item reg-cont-item-btn ">
+								<div class="col-xs-8  col-xs-offset-1 ">
+									<input type="submit" id=""  class=" btn btn-danger btn-block "  value="下一步" />
+								</div>
+
+							</li>
+
+						</ul>
+					</form>
+				</div>
+			</div>
+
+		</section>
+
+		<footer>
+			<div class="com-footer">
+				<ul>
+					<li>
+						<a href="#">关于吉宏</a>
+					</li>
+					<li>
+						<a href="#">吉宏梦</a>
+					</li>
+					<li>
+						<a href="#">盆栽交易平台</a>
+					</li>
+					<li>
+						<a href="#">吉宏发财树</a>
+					</li>
+					<li>
+						<a href="#">行业信息</a>
+					</li>
+					<li>
+						<a href="#">联系我们</a>
+					</li>
+				</ul>
+
+				<p class="text-center  text-ash">
+					<span>CopyRight</span>
+					<span>@ 2004-2017</span>
+					<span>吉宏ji-hong.cn</span>
+					<span>所有版权</span>
+				</p>
+			</div>
+		</footer>
+
+		<!--js -->
+		<script src="js/Home/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+
+		<!--[if lte IE 9]>
+			<script src="js/Home/ie/ie8.js" type="text/javascript" charset="utf-8"></script>
+		<![endif]-->
+
+		<script type="text/javascript">
+			
+			//验证
+			$('.findpwd-1')
+				.bootstrapValidator({
+					
+					fields: {
+						
+						yz1: {
+
+							validators: {
+								notEmpty: {
+									message: ' 用户名不能为空！'
+								},//远程验证
+			                    remote: {
+			                        type: 'get', 
+			                        url: 'remote.json', //返回值为true 和 false {"valid":false}
+									//delay: 2000,
+			                        message: '用户名不存在！' 
+			                    },
+							
+							}
+						
+						},
+						yz2: {
+							validators: {
+//								notEmpty: {
+//									message: ' 验证码不能为空！'
+//								},
+								callback: {
+				                        message: '验证码有误！', //回调函数验证
+				                        callback: function(value, validator) {
+				                           
+				                            return value == '275861';
+				                        }
+                  				  }
+								
+							}
+						
+						},
+							
+               yz3: {
+                    validators: {
+                        notEmpty: {
+                            message: '手机号码不能为空'
+                        },
+                        	//正则表达式验证
+	                    regexp: {
+	                        regexp: /^1\d{10}$/,
+	                        message: '输入的手机号码有误！'
+	                    },
+                    }
+                },
+            
+					
+					
+					}
+				
+				})
+				.on('success.form.bv', function(e) {
+						e.preventDefault();
+						
+						
+					
+					alert('提交')
+   				
+						//异步提交事件 
+							
+			});
+		</script>
+
+	</body>
+
+</html>
