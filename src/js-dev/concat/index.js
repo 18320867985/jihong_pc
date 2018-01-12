@@ -303,56 +303,30 @@ var index = (function($) {
 		})
 
 		//下拉菜单dropmenu1
-		$(".icon-xiala-btn1").click(function(e) {
+		$(".index-head-menu").hover(function(e) {
+			
+			$(".index-head-drop",this).show();
+		//var p1 = $(this).parents(".index-head-l");	
+		//			$(".index-head-drop", p1).toggle();
+		//
+		//			//对document绑定一个影藏Div方法
+		//			$(document).on("click", function() {
+		//
+		//				$(".index-head-drop", p1).hide();
+		//			});
+		//			//阻止事件向上冒泡
+		//			e.stopPropagation();
 
-			$(".index-head-drop2,.index-head-drop3").hide();
-			var p1 = $(this).parents(".index-head-l");
+	
 
-			$(".index-head-drop", p1).toggle();
-
-			//对document绑定一个影藏Div方法
-			$(document).on("click", function() {
-
-				$(".index-head-drop", p1).hide();
-			});
-			//阻止事件向上冒泡
-			e.stopPropagation();
-
+		},function(){
+		
+			$(".index-head-drop",this).hide();
+			
 		});
 
-		//下拉菜单dropmenu2
-		$(".icon-xiala-btn2").click(function(e) {
-			$(".index-head-drop,.index-head-drop3").hide();
-			var p1 = $(this).parents(".index-head-l");
-
-			$(".index-head-drop2", p1).toggle();
-
-			//对document绑定一个影藏Div方法
-			$(document).on("click", function() {
-
-				$(".index-head-drop2", p1).hide();
-			});
-			//阻止事件向上冒泡
-			e.stopPropagation();
-
-		});
-
-		//下拉菜单dropmenu3
-		$(".icon-xiala-btn3").click(function(e) {
-			$(".index-head-drop2,.index-head-drop").hide();
-			var p1 = $(this).parents(".index-head-r");
-
-			$(".index-head-drop3", p1).toggle();
-
-			//对document绑定一个影藏Div方法
-			$(document).on("click", function() {
-
-				$(".index-head-drop3", p1).hide();
-			});
-			//阻止事件向上冒泡
-			e.stopPropagation();
-
-		});
+		
+		
 
 		//搜索框下拉菜单
 		$(".index-search-sl").click(function(e) {

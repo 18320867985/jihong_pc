@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="Keywords" content="" />
+		<meta name="Description" content="" />
+		<title>对账单</title>
+
+		<link rel="stylesheet" href="Content/Home/cstfont/iconfont.css" />
+		<link rel="stylesheet" href="Content/Home/all.css" />
+		<link rel="stylesheet" type="text/css" href="Content/Home/bs-date/css/bootstrap-datetimepicker.min.css" />
+	</head>
+
+	<body>
+		<!--top -->
+		<header>
+			<div class="bg-white">
+
+				<div class="index-head ">
+					<div class="container-12 clearfix">
+						<!--已登陆-->
+						<div class="index-head-wrap ">
+							<div class="index-head-l pull-left">
+								<span class="text-777">你好,</span>
+								<a href="#">
+									<span class="text-danger">admin</span>
+									<span class="iconfont icon-xiala  text-base"></span>
+								</a>
+								<span class="text-ash-2">|</span>
+								<span class="text-777">下午好,欢迎你回来!</span>
+								<span class="text-ash-2">|</span>
+								<a href="#" class="index-head-l-a">
+									<span class=" iconfont icon-xinxi"></span>
+									<span class="text-777">消息</span>
+									<span class="text-danger">0</span>
+									<span class="iconfont icon-xiala  text-base"></span>
+								</a>
+							</div>
+
+							<div class="index-head-r pull-right">
+
+								<a href="#">
+									<span class="text-777">购物车</span>
+									<span class="text-danger">0</span>
+									<span class="iconfont icon-xiala  text-base"></span>
+								</a>
+								<span class="text-ash-2">|</span>
+								<a href="#">帮助中心</a>
+								<span class="text-ash-2">|</span>
+								<a href="#">联系我们</a>
+								<span class="text-ash-2">|</span>
+								<span class="text-777"><a href="#">退出</a></span>
+
+							</div>
+						</div>
+						<!--未登陆-->
+						<div class="index-head-wrap v-hide ">
+							<div class="index-head-l pull-left">
+								<span class="text-777">你好,欢迎来到吉宏园艺网!</span>
+
+							</div>
+
+							<div class="index-head-r pull-right ">
+
+								<a href="#">
+									注册
+								</a>
+								<span class="text-ash-2">|</span>
+								<a href="#">登录</a>
+
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!--logo-->
+				<div class='index-logo container-12 clearfix  relative'>
+					<img alt="logo img" src="images/Home/logo.png" class="pull-left"></img>
+					<!--search box -->
+					<div class="index-search-big">
+						<div id="" class="index-search clearfix">
+
+							<input type="text" name="" id="" value="" class="index-search-input" placeholder="发财树" />
+							<input type="submit" id="" name="" class="index-search-submit btn btn-danger  rd-no" value="搜索" />
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</header>
+
+		<!--导航-->
+		<nav>
+			<div class="admin-nav">
+
+				<div class="container-12 clearfix  relative">
+					<a href="#" class="ttl">供应商中心</a>
+
+					<ul class="admin-nav-list pull-left  ">
+						<li class="">
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">材料订购</a>
+						</li>
+						<li>
+							<a href="#">商品列表</a>
+						</li>
+						<li>
+							<a href="#">新品推荐</a>
+						</li>
+
+					</ul>
+
+					<div id="" class="admin-nav-btn dropdown">
+
+						<button type="button" data-toggle="dropdown" class=" btn btn-default rd-no  pull-right">模糊订购
+					
+					<span class="iconfont icon-xiala  "></span>
+					</button>
+
+						<ul class="dropdown-menu  dropdown-menu-right clearfix">
+							<li>
+								<a href="#">模糊订购1</a>
+							</li>
+							<li>
+								<a href="#">模糊订购2</a>
+							</li>
+							<li>
+								<a href="#">模糊订购3</a>
+							</li>
+							<li>
+								<a href="#">模糊订购4</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- 内容-->
+		<section>
+
+			<div class="payorder container-12">
+
+				<div class=" clearfix">
+
+					<!--left-->
+					<div class="payorder-l  col-xs-2 text-center">
+						<h4>订单支付</h4>
+					</div>
+
+					<!--right-->
+					<div class="payorder-r col-xs-10">
+
+						<h5>你的订单提交成功，请选择以下任意一种方式转账给我们，以便我们给你尽快发货。</h5>
+
+						<ul class="jiner clearfix">
+							<li>
+								<label for="">订单金额：</label>
+								<span class="text-danger">372</span> 元
+							</li>
+							<li>
+								<label for="">订单号：</label>
+								<span>3201313123123123312</span>
+							</li>
+
+						</ul>
+
+						<!--支付方式 tab-->
+						<div class="payorder-select">
+							<h5>支付方式</h5>
+							<ul class="nav jiner ">
+								<li class="active">
+									<a href="#a1" data-toggle="tab">
+									<img src="images/Home/pay.png" alt="支付宝" />	支付宝
+									</a>
+								</li>
+								<li>
+									<a href="#a2" data-toggle="tab">
+										<img src="images/Home/weixin.png" alt="微信" />	微信
+									</a>
+								</li>
+								<li>
+									<a href="#a3" data-toggle="tab">
+										<img src="images/Home/bank.png" alt="银行卡" />银行卡
+									</a>
+								</li>
+							</ul>
+
+							<div class="tab-content">
+
+								<div class="tab-pane fade  in active clearfix" id="a1">
+									<h5>请添加一下其一支付宝账号为好友后进行转账:</h5>
+									<h4 class="text-danger h4">支付宝转账</h4>
+									<ul class="clearfix pull-left">
+										<li>
+											<label for="">支付宝账户：</label>
+											<span class="">18322228888@qq.com</span>
+										</li>
+										<li>
+											<label for="">户名：</label>
+											<span>李明</span>
+										</li>
+
+									</ul>
+									
+									<!--名片-->
+									<img class="pull- left" src="images/Home/pay-weixin.png" alt="" />
+
+								</div>
+								<div class="tab-pane fade" id="a2">
+									<h5>请添加一下其一微信账号为好友后进行转账:</h5>
+									<h4 class="text-danger h4">微信转账户</h4>
+									<ul class="clearfix pull-left">
+										<li>
+											<label for="">微信账户：</label>
+											<span class="">18322228888@qq.com</span>
+										</li>
+										<li>
+											<label for="">户名：</label>
+											<span>李明</span>
+										</li>
+
+									</ul>
+									
+									<!--名片-->
+									<img class="pull- left" src="images/Home/pay-weixin.png" alt="" />
+								</div>
+								<div class="tab-pane fade" id="a3">
+									<h5>银行卡账号转账:</h5>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<footer>
+			<div class="com-footer">
+				<ul>
+					<li>
+						<a href="#">关于吉宏</a>
+					</li>
+					<li>
+						<a href="#">吉宏梦</a>
+					</li>
+					<li>
+						<a href="#">盆栽交易平台</a>
+					</li>
+					<li>
+						<a href="#">吉宏发财树</a>
+					</li>
+					<li>
+						<a href="#">行业信息</a>
+					</li>
+					<li>
+						<a href="#">联系我们</a>
+					</li>
+				</ul>
+
+				<p class="text-center  text-ash">
+					<span>CopyRight</span>
+					<span>@ 2004-2017</span>
+					<span>吉宏ji-hong.cn</span>
+					<span>所有版权</span>
+				</p>
+			</div>
+		</footer>
+
+		<!--js -->
+		<script src="js/Home/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src=" js/Home/all.js" type="text/javascript" charset="utf-8"></script>
+
+		<!--[if lte IE 9]>
+			<script src="js/Home/ie/ie8.js" type="text/javascript" charset="utf-8"></script>
+		<![endif]-->
+
+		<script type="text/javascript">
+		</script>
+	</body>
+
+</html>

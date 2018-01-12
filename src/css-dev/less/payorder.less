@@ -1,0 +1,103 @@
+/* 订单支付*/
+
+.payorder {
+    padding: 50px 10px 10px 10px;
+    min-height: 200px;
+}
+
+// 左边标题
+.payorder-l {
+    h4 {
+        color: #444;
+        font-weight: 600;
+    }
+}
+
+// 右边标题
+.payorder-r {
+    >h5 {
+        color: #444;
+        font-size: 16px;
+    }
+    ul.jiner {
+        margin-top: 30px;
+        li {
+            float: left;
+            span,
+            label {
+                font-size: 15px;
+            }
+            &+li {
+                margin-left: 60px;
+            }
+        }
+    }
+}
+
+// 支付方式
+.payorder-select {
+    margin-top: 50px;
+    >h5 {
+        color: #444;
+        font-weight: 600;
+        font-size: 15px;
+    }
+    .h4 {
+        margin-top: 30px;
+    }
+    .nav {
+        margin-top: 10px;
+        li {
+            a {
+                display: inline-block;
+                padding: 5px 20px;
+                font-size: 14px;
+                border: 1px solid #ddd;
+                
+                img{
+                    width: 40px;
+                    height: 30px;
+                }
+                
+                &:active,
+                &:focus,
+                &:hover {
+                    background: none !important;
+                }
+            }
+            &.active {
+                a {
+                    
+                    color: @text-danger;
+                    border: 1px solid @text-danger;
+                }
+            }
+        }
+    }
+    // tab centent
+    .tab-content {
+        margin-top: 15px;
+        padding: 10px 0;
+        ul {
+            margin-top: 20px;
+            li {
+                float: none;
+                font-size: 14px;
+                
+                &+li{
+                     margin-top: 10px;
+                }
+            }
+        }
+        
+        // img 用户图片
+        img{
+            position: relative;
+            top:-30px;
+           margin-left: 50px;
+            width: 150px;
+            height: 150px;
+            
+        }
+    }
+}
