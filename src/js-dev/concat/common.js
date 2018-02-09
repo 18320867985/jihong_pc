@@ -61,7 +61,7 @@ var  common=(function($){
 						
 							var img_h = parseInt($(this).offset().top) - parseInt(window_h);
 							var img_h2 = parseInt($(this).offset().top)+$(this).height();
-							if($(document).scrollTop() >= img_h&&$(document).scrollTop()<img_h2) {
+							if($(window).scrollTop() >= img_h&&$(window).scrollTop()<img_h2) {
 
 								$(this).attr("src", $(this).attr("data-src"));
 							
@@ -75,7 +75,7 @@ var  common=(function($){
 								* */
 
 							}
-
+							
 						})
 					}, 100)
 				})

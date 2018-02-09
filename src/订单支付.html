@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="Keywords" content="" />
 		<meta name="Description" content="" />
-		<title>对账单</title>
+		<title>订单支付</title>
 
 		<link rel="stylesheet" href="Content/Home/cstfont/iconfont.css" />
 		<link rel="stylesheet" href="Content/Home/all.css" />
@@ -178,18 +178,18 @@
 						<div class="payorder-select">
 							<h5>支付方式</h5>
 							<ul class="nav jiner ">
-								<li class="active">
-									<a href="#a1" data-toggle="tab">
+								<li class=" active2">
+									<a href="#a1">
 									<img src="images/Home/pay.png" alt="支付宝" />	支付宝
 									</a>
 								</li>
 								<li>
-									<a href="#a2" data-toggle="tab">
+									<a href="#a2" >
 										<img src="images/Home/weixin.png" alt="微信" />	微信
 									</a>
 								</li>
 								<li>
-									<a href="#a3" data-toggle="tab">
+									<a href="#a3" >
 										<img src="images/Home/bank.png" alt="银行卡" />银行卡
 									</a>
 								</li>
@@ -197,7 +197,7 @@
 
 							<div class="tab-content">
 
-								<div class="tab-pane fade  in active clearfix" id="a1">
+								<div class="tab-pane  active clearfix active2" id="a1">
 									<h5>请添加一下其一支付宝账号为好友后进行转账:</h5>
 									<h4 class="text-danger h4">支付宝转账</h4>
 									<ul class="clearfix pull-left">
@@ -216,7 +216,7 @@
 									<img class="pull- left" src="images/Home/pay-weixin.png" alt="" />
 
 								</div>
-								<div class="tab-pane fade" id="a2">
+								<div class="tab-pane" id="a2">
 									<h5>请添加一下其一微信账号为好友后进行转账:</h5>
 									<h4 class="text-danger h4">微信转账户</h4>
 									<ul class="clearfix pull-left">
@@ -234,7 +234,7 @@
 									<!--名片-->
 									<img class="pull- left" src="images/Home/pay-weixin.png" alt="" />
 								</div>
-								<div class="tab-pane fade" id="a3">
+								<div class="tab-pane " id="a3">
 									<h5>银行卡账号转账:</h5>
 								</div>
 
@@ -243,6 +243,33 @@
 						</div>
 
 					</div>
+				</div>
+				
+				<!--link url-->
+				<div class=" container-12 payorder-mark clearfix">
+					
+					<div class="panel panel-default rd-no2 clearfix" style=" background:#f0f3f5 ; padding: 10px ; border: none;">
+						
+						<div class="col-xs-offset-2 col-xs-10">
+							<a class=" text-primary" href="avascript:;">查看详情</a>
+							<a class=" text-primary" href="avascript:;">继续购物</a>
+							<a class=" text-primary" href="avascript:;">联系业务员</a>
+						</div>
+					</div>
+					
+					<div class="col-xs-offset-2 col-xs-10">
+							<span class="zhu">注:</span>
+							<p>
+								交易时间 :每天<span class="text-danger">16:30</span>
+								分钟前所下的订单为当天受理订单，
+								<span class="text-danger">16:30</span>
+								之后下订单为第二天下的订单。
+							</p>
+							<p>
+								本公司产品价格不包括运费，我公司负责商品打包装箱，并帮客户联系合适的物流公司，运输费用均由买方承担。
+							</p>
+					</div>
+					
 				</div>
 
 			</div>
@@ -290,6 +317,19 @@
 		<![endif]-->
 
 		<script type="text/javascript">
+			
+			$(".nav.jiner li a").click(function(e){
+				$(".nav.jiner li").removeClass("active2");
+				$(this).closest("li").addClass("active2");
+				
+				var targetId=$(this).attr("href");
+				$(".tab-pane").hide();
+				$(targetId).fadeIn(500);
+				
+				
+				return false;
+			});
+			
 		</script>
 	</body>
 
